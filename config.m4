@@ -13,9 +13,8 @@ dnl [  --with-pace             Include pace support])
 
 dnl Otherwise use enable:
 
-dnl PHP_ARG_ENABLE(pace, whether to enable pace support,
-dnl Make sure that the comment is aligned:
-dnl [  --enable-pace           Enable pace support])
+PHP_ARG_ENABLE(pace, whether to enable Php access control extension support,
+[  --enable-pace           Enable PHP access control extension support])
 
 if test "$PHP_PACE" != "no"; then
   dnl Write more examples of tests here...
@@ -59,5 +58,21 @@ if test "$PHP_PACE" != "no"; then
   dnl
   dnl PHP_SUBST(PACE_SHARED_LIBADD)
 
-  PHP_NEW_EXTENSION(pace, pace.c, $ext_shared)
+  CFLAGS="$CFLAGS -Wall -fvisibility=hidden"
+
+  # Check libselinux
+  PHP_CHECK_LIBRARY(selinux, is_selinux_enabled,
+  [
+    PHP_ADD_LIBRARY(selinux, 1, PACE_SHARED_LIBADD)
+  ], [
+    AC_MSG_ERROR("libselinux not found!")
+  ], [
+    -lselinux
+  ])
+
+  pace_sources="pace.c \
+                pace_selinux.c"
+
+  PHP_NEW_EXTENSION(pace, $pace_sources, $ext_shared)
+  PHP_SUBST(PACE_SHARED_LIBADD)
 fi

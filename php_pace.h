@@ -12,7 +12,7 @@
   | obtain it through the world-wide-web, please send a note to          |
   | license@php.net so we can mail you a copy immediately.               |
   +----------------------------------------------------------------------+
-  | Author:                                                              |
+  | Author: Osmond Sun                                                   |
   +----------------------------------------------------------------------+
 */
 
@@ -21,10 +21,13 @@
 #ifndef PHP_PACE_H
 #define PHP_PACE_H
 
+#define PHP_PACE_VERSION "0.1.0" /* Replace with version number for your extension */
+
+
+
 extern zend_module_entry pace_module_entry;
 #define phpext_pace_ptr &pace_module_entry
 
-#define PHP_PACE_VERSION "0.1.0" /* Replace with version number for your extension */
 
 #ifdef PHP_WIN32
 #	define PHP_PACE_API __declspec(dllexport)
@@ -38,23 +41,52 @@ extern zend_module_entry pace_module_entry;
 #include "TSRM.h"
 #endif
 
+
+typedef struct _zend_compile_args {
+  zend_file_handle* file_handle;
+  int type;
+#ifdef ZTS
+  TSRMLS_D;
+#endif
+} zend_compile_args;
+
+typedef struct _zend_compile_retval {
+  zend_op_array * op_array;
+  int bailout;
+} zend_compile_retval;
+
+typedef struct _zend_execute_args {
+  zend_op_array * op_array;
+  sigset_t * sigmask;
+#ifdef ZTS
+  TSRMLS_D;
+#endif
+} zend_execute_args;
+
+typedef struct _zend_execute_retval {
+  int bailout;
+} zend_execute_retval;
+
+
+
+
 PHP_MINIT_FUNCTION(pace);
 PHP_MSHUTDOWN_FUNCTION(pace);
 PHP_RINIT_FUNCTION(pace);
 PHP_RSHUTDOWN_FUNCTION(pace);
 PHP_MINFO_FUNCTION(pace);
 
-PHP_FUNCTION(confirm_pace_compiled);	/* For testing, remove later. */
+//PHP_FUNCTION(confirm_pace_compiled);	/* For testing, remove later. */
 
 /* 
   	Declare any global variables you may need between the BEGIN
 	and END macros here:     
 
+*/
 ZEND_BEGIN_MODULE_GLOBALS(pace)
-	long  global_value;
+	char *global_value;
 	char *global_string;
 ZEND_END_MODULE_GLOBALS(pace)
-*/
 
 /* In every utility function you add that needs to use variables 
    in php_pace_globals, call TSRMLS_FETCH(); after declaring other 
@@ -71,6 +103,8 @@ ZEND_END_MODULE_GLOBALS(pace)
 #else
 #define PACE_G(v) (pace_globals.v)
 #endif
+
+
 
 #endif	/* PHP_PACE_H */
 
