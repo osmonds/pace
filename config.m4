@@ -70,6 +70,17 @@ if test "$PHP_PACE" != "no"; then
     -lselinux
   ])
 
+  # Check libaudit
+  PHP_CHECK_LIBRARY(audit, audit_open,
+  [
+    PHP_ADD_LIBRARY(audit, 1, PACE_SHARED_LIBADD)
+  ], [
+    AC_MSG_ERROR("libaudit not found!")
+  ], [
+    -laudit
+  ])
+
+
   pace_sources="pace.c \
                 pace_selinux.c"
 

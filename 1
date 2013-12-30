@@ -5,7 +5,7 @@
 #include <selinux/selinux.h>
 #include <selinux/context.h>
 #include <syslog.h>
-#include <errno.h>
+
 
 static int
 log_callback (int type, const char *fmt, ...)
@@ -15,7 +15,6 @@ log_callback (int type, const char *fmt, ...)
     va_list ap;
     va_start(ap, fmt);
     audit_fd = audit_open();
-    zend_error(E_WARNING, "!!!!!!!!!!!!!!!!!!!,audit_fd:%d",audit_fd);
 
     if(audit_fd >= 0){
         char * buf;
@@ -39,15 +38,6 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 	security_context_t file_context;
 	union selinux_callback old_callback;
 
-	int audit_fd = audit_open();
-	if (audit_fd < 0 && !(errno == EINVAL || errno == EPROTONOSUPPORT ||
-                           errno == EAFNOSUPPORT)) {
-         /* The above error codes are only given when the kernel doesn't
-          * have audit compiled in. */
-         zend_error(E_WARNING, "Error - unable to connect to audit system\n");
-    }
-	zend_error(E_WARNING, "!!!!!!!!!!!!!audit_fd:%d", audit_fd);
-
 	old_callback = selinux_get_callback(SELINUX_CB_LOG);
 	selinux_set_callback(SELINUX_CB_LOG, (union selinux_callback) &log_callback);
 	
@@ -70,7 +60,7 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 							NULL);
 	zend_error(E_WARNING, "current:%s, file:%s", current_context, file_context);
 	
-//	selinux_set_callback(SELINUX_CB_LOG, old_callback);
+	selinux_set_callback(SELINUX_CB_LOG, old_callback);
 	if(ret == -1){
 		zend_error(E_WARNING, "permission denied:%s, to %s[%s].", current_context, file_context, file_handle->filename);
 		return -1;
