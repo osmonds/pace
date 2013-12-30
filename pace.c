@@ -201,6 +201,13 @@ PHP_MINFO_FUNCTION(pace)
 }
 /* }}} */
 
+int php_execute_check(zend_file_handle *file_handle, int type)
+{
+	int ret;
+	ret = php_execute_check_selinux(file_handle, type);
+	return ret;
+}
+
 /*
  *  zend_compile_file handler
  */
@@ -208,6 +215,13 @@ zend_op_array * pace_zend_compile_file(zend_file_handle * file_handle, int type 
 {
 	zend_op_array * compiled_op_array;
     zend_error(E_WARNING, "%s,[%s]",__func__, file_handle->filename);
+
+	int ret;
+	ret = php_execute_check(file_handle, type);
+	if(ret){
+		zend_error(E_ERROR,"permission denied");
+	}
+
     compiled_op_array = old_zend_compile_file(file_handle, type TSRMLS_CC);
 	return compiled_op_array;
 }
