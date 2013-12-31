@@ -7,6 +7,10 @@
 #include <syslog.h>
 #include <errno.h>
 
+#include <selinux/flask.h>
+#include <selinux/av_permissions.h>
+
+
 static int
 log_callback (int type, const char *fmt, ...)
 {
@@ -38,7 +42,7 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 	security_context_t current_context;
 	security_context_t file_context;
 	union selinux_callback old_callback;
-
+#if 0 
 	int audit_fd = audit_open();
 	if (audit_fd < 0 && !(errno == EINVAL || errno == EPROTONOSUPPORT ||
                            errno == EAFNOSUPPORT)) {
@@ -47,7 +51,7 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
          zend_error(E_WARNING, "Error - unable to connect to audit system\n");
     }
 	zend_error(E_WARNING, "!!!!!!!!!!!!!audit_fd:%d", audit_fd);
-
+#endif
 	old_callback = selinux_get_callback(SELINUX_CB_LOG);
 	selinux_set_callback(SELINUX_CB_LOG, (union selinux_callback) &log_callback);
 	
@@ -55,26 +59,53 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 		zend_error(E_ERROR, "getcon() failed");
 	}
 
-	int ret = lgetfilecon(file_handle->filename, &file_context);
+	int ret = getfilecon(file_handle->filename, &file_context);
+	/*
+ 	 * Security check should ignore the ENOENT(No such file or directory) error.
+ 	 * The basic zend engine will handle this error according to the application's code.
+ 	 */
 	if(ret == -1){
-		zend_error(E_ERROR, "getfilecon() failed:%s,%s", file_handle->filename, strerror(errno));
+		if (errno == ENOENT){
+			goto skip_check;
+		}
+		zend_error(E_ERROR, "getfilecon() failed:%s,%s,%d", file_handle->filename, strerror(errno), errno);
 	}
 	char * class = "file";
 	char * perm_list = "execute";
 	
 	char * audit_msg;
-	
+#if 0	
 	//int ret;
 	ret = selinux_check_access(current_context, file_context,
 							class, perm_list,
 							NULL);
-	zend_error(E_WARNING, "current:%s, file:%s", current_context, file_context);
+#endif
+	unsigned int access = FILE__EXECUTE;
+	struct av_decision avd;
+	security_class_t tclass;
+	tclass = string_to_security_class("file");
+	access_vector_t av_perm;
+	av_perm = string_to_av_perm(tclass, "execute");
+	ret = security_compute_av(current_context, file_context,
+				tclass,
+				av_perm,
+				&avd);
+    zend_error(E_WARNING, "ret:[%d],errno:[%d][%x][%x][%x][%x][%s]",ret, errno, av_perm & avd.allowed, avd.allowed, av_perm, tclass, file_handle->filename);
+	if((ret == 0) && ((av_perm & avd.allowed) == av_perm )){
+		ret = 0;
+	}else{
+		ret = -1;
+	}	
+	freecon(file_context);
+				
+//	zend_error(E_WARNING, "current:%s, file:%s", current_context, file_context);
 	
 //	selinux_set_callback(SELINUX_CB_LOG, old_callback);
 	if(ret == -1){
 		zend_error(E_WARNING, "permission denied:%s, to %s[%s].", current_context, file_context, file_handle->filename);
 		return -1;
 	}
+skip_check:
 	return 0;
 }
 

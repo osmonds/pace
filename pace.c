@@ -12,7 +12,7 @@
   | obtain it through the world-wide-web, please send a note to          |
   | license@php.net so we can mail you a copy immediately.               |
   +----------------------------------------------------------------------+
-  | Author:Osmond Sun                                                    |
+  | Author:Osmond Sun      <osmond.sun@gmail.com>                        |
   +----------------------------------------------------------------------+
 */
 
@@ -86,7 +86,7 @@ zend_module_entry pace_module_entry = {
 	PHP_RSHUTDOWN(pace),	/* Replace with NULL if there's nothing to do at request end */
 	PHP_MINFO(pace),
 #if ZEND_MODULE_API_NO >= 20010901
-	PHP_PACE_VERSION,
+	PACE_VERSION,
 #endif
 #if 1
     PHP_MODULE_GLOBALS(pace),
@@ -146,7 +146,7 @@ PHP_MINIT_FUNCTION(pace)
 		return FAILURE;
 	} 
     
-    zend_error(E_WARNING, "init,MINIT,here:%s", __func__);
+    //zend_error(E_WARNING, "init,MINIT,here:%s", __func__);
 	return SUCCESS;
 }
 /* }}} */
@@ -168,7 +168,7 @@ PHP_MSHUTDOWN_FUNCTION(pace)
  */
 PHP_RINIT_FUNCTION(pace)
 {
-	zend_error(E_WARNING, "init,rinit,%s", __func__);
+	//zend_error(E_WARNING, "init,rinit,%s", __func__);
 	old_zend_compile_file = zend_compile_file;
 	zend_compile_file = pace_zend_compile_file;
 
@@ -204,7 +204,9 @@ PHP_MINFO_FUNCTION(pace)
 int php_execute_check(zend_file_handle *file_handle, int type)
 {
 	int ret;
+	//zend_error(E_WARNING, "!!!!!type[%d]", type);
 	ret = php_execute_check_selinux(file_handle, type);
+	//zend_error(E_WARNING, "check!!!!!:[%s]_end_:[%d]type[%d]", file_handle->filename, ret,type);
 	return ret;
 }
 
@@ -214,14 +216,14 @@ int php_execute_check(zend_file_handle *file_handle, int type)
 zend_op_array * pace_zend_compile_file(zend_file_handle * file_handle, int type TSRMLS_DC)
 {
 	zend_op_array * compiled_op_array;
-    zend_error(E_WARNING, "%s,[%s]",__func__, file_handle->filename);
-
+    //zend_error(E_WARNING, "%s,[%s]",__func__, file_handle->filename);
+#if 1
 	int ret;
 	ret = php_execute_check(file_handle, type);
 	if(ret){
 		zend_error(E_ERROR,"permission denied");
 	}
-
+#endif
     compiled_op_array = old_zend_compile_file(file_handle, type TSRMLS_CC);
 	return compiled_op_array;
 }
@@ -256,7 +258,7 @@ PHP_FUNCTION(confirm_pace_compiled)
 ZEND_DLEXPORT int pace_zend_startup(zend_extension *extension)
 {
         zend_pace_initialised = 1;
-        zend_error(E_WARNING, "OSMOND,startup");
+     //   zend_error(E_WARNING, "OSMOND,startup");
         return zend_startup_module(&pace_module_entry);
 }
 
@@ -274,11 +276,11 @@ ZEND_DLEXPORT void pace_zend_shutdown(zend_extension *extension)
 #endif
 ZEND_EXTENSION();
 ZEND_DLEXPORT zend_extension zend_extension_entry = {
-        "ss",
-        "ss",
-        "1",
-        "2",
-        "3",
+       	PACE_NAME,
+		PACE_VERSION,
+		PACE_AUTHOR,
+		PACE_URL_FAQ,
+		PACE_COPYRIGHT_SHORT, 
         pace_zend_startup,      // startup_func_t
         pace_zend_shutdown,     // shutdown_func_t
         NULL,                                   // activate_func_t

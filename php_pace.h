@@ -21,8 +21,13 @@
 #ifndef PHP_PACE_H
 #define PHP_PACE_H
 
-#define PHP_PACE_VERSION "0.1.0" /* Replace with version number for your extension */
-
+#define PACE_NAME		"pace"
+#define PACE_VERSION "0.1.0" /* Replace with version number for your extension */
+#define PACE_AUTHOR		"Omsond Sun"
+#define PACE_COPYRIGHT	"Copyright (c) 2013-2014 by Osmond Sun"
+#define PACE_COPYRIGHT_SHORT "Copyright (c) 2013-2014"
+#define PACE_URL	"http://github.com"
+#define PACE_URL_FAQ "httpd://github.com"
 
 
 extern zend_module_entry pace_module_entry;
