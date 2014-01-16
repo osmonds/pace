@@ -1,0 +1,895 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APPLY_TSRMLS_CC	/mnt/linux/project/pace/php/pace/pace.c	44;"	d	file:
+APPLY_TSRMLS_CC	/mnt/linux/project/pace/php/pace/pace.c	47;"	d	file:
+APPLY_TSRMLS_DC	/mnt/linux/project/pace/php/pace/pace.c	45;"	d	file:
+APPLY_TSRMLS_DC	/mnt/linux/project/pace/php/pace/pace.c	48;"	d	file:
+AWK	/mnt/linux/project/pace/php/pace/Makefile	/^AWK = gawk$/;"	m
+CC	/mnt/linux/project/pace/php/pace/Makefile	/^CC = cc$/;"	m
+CFLAGS	/mnt/linux/project/pace/php/pace/Makefile	/^CFLAGS = -g -O2 -Wall -fvisibility=hidden$/;"	m
+CFLAGS_CLEAN	/mnt/linux/project/pace/php/pace/Makefile	/^CFLAGS_CLEAN = $(CFLAGS)$/;"	m
+COMMON_FLAGS	/mnt/linux/project/pace/php/pace/Makefile	/^COMMON_FLAGS = $(DEFS) $(INCLUDES) $(EXTRA_INCLUDES) $(CPPFLAGS) $(PHP_FRAMEWORKPATH)$/;"	m
+COMPILE_DL_PACE	/mnt/linux/project/pace/php/pace/config.h	5;"	d
+CONFIGURE_COMMAND	/mnt/linux/project/pace/php/pace/Makefile	/^CONFIGURE_COMMAND = '.\/configure'$/;"	m
+CONFIGURE_OPTIONS	/mnt/linux/project/pace/php/pace/Makefile	/^CONFIGURE_OPTIONS =$/;"	m
+CPP	/mnt/linux/project/pace/php/pace/Makefile	/^CPP = cc -E$/;"	m
+CPPFLAGS	/mnt/linux/project/pace/php/pace/Makefile	/^CPPFLAGS = -DHAVE_CONFIG_H$/;"	m
+CUR_DIR	/mnt/linux/project/pace/php/pace/run-tests.php	/^$CUR_DIR = getcwd();$/;"	v
+CXX	/mnt/linux/project/pace/php/pace/Makefile	/^CXX =$/;"	m
+CXXFLAGS	/mnt/linux/project/pace/php/pace/Makefile	/^CXXFLAGS =$/;"	m
+CXXFLAGS_CLEAN	/mnt/linux/project/pace/php/pace/Makefile	/^CXXFLAGS_CLEAN = $(CXXFLAGS)$/;"	m
+CreateProcess	/mnt/linux/project/pace/php/pace/libtool	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
+CreateProcess	/mnt/linux/project/pace/php/pace/ltmain.sh	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
+DEFS	/mnt/linux/project/pace/php/pace/Makefile	/^DEFS = -DPHP_ATOM_INC -I$(top_builddir)\/include -I$(top_builddir)\/main -I$(top_srcdir)$/;"	m
+DETAILED	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$DETAILED = true;$/;"	v
+DETAILED	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$DETAILED = 0;$/;"	v
+DETAILED	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$DETAILED = getenv('TEST_PHP_DETAILED');$/;"	v
+EGREP	/mnt/linux/project/pace/php/pace/Makefile	/^EGREP = \/usr\/bin\/grep -E$/;"	m
+EXTENSION_DIR	/mnt/linux/project/pace/php/pace/Makefile	/^EXTENSION_DIR = \/usr\/lib64\/php\/modules$/;"	m
+EXTRA_LDFLAGS	/mnt/linux/project/pace/php/pace/Makefile	/^EXTRA_LDFLAGS =$/;"	m
+EXTRA_LIBS	/mnt/linux/project/pace/php/pace/Makefile	/^EXTRA_LIBS =$/;"	m
+FILE_BINARY	/mnt/linux/project/pace/php/pace/run-tests.php	/^		define('FILE_BINARY', 0);$/;"	d
+HAVE_DLFCN_H	/mnt/linux/project/pace/php/pace/config.h	8;"	d
+HAVE_INTTYPES_H	/mnt/linux/project/pace/php/pace/config.h	11;"	d
+HAVE_MEMORY_H	/mnt/linux/project/pace/php/pace/config.h	14;"	d
+HAVE_STDINT_H	/mnt/linux/project/pace/php/pace/config.h	17;"	d
+HAVE_STDLIB_H	/mnt/linux/project/pace/php/pace/config.h	20;"	d
+HAVE_STRINGS_H	/mnt/linux/project/pace/php/pace/config.h	23;"	d
+HAVE_STRING_H	/mnt/linux/project/pace/php/pace/config.h	26;"	d
+HAVE_SYS_STAT_H	/mnt/linux/project/pace/php/pace/config.h	29;"	d
+HAVE_SYS_TYPES_H	/mnt/linux/project/pace/php/pace/config.h	32;"	d
+HAVE_UNISTD_H	/mnt/linux/project/pace/php/pace/config.h	35;"	d
+INCLUDES	/mnt/linux/project/pace/php/pace/Makefile	/^INCLUDES = -I\/usr\/include\/php -I\/usr\/include\/php\/main -I\/usr\/include\/php\/TSRM -I\/usr\/include\/php\/Zend -I\/usr\/include\/php\/ext -I\/usr\/include\/php\/ext\/date\/lib$/;"	m
+INSTALL	/mnt/linux/project/pace/php/pace/Makefile	/^INSTALL = $(top_srcdir)\/build\/shtool install -c$/;"	m
+INSTALL_DATA	/mnt/linux/project/pace/php/pace/Makefile	/^INSTALL_DATA = $(INSTALL) -m 644$/;"	m
+INSTALL_HEADERS	/mnt/linux/project/pace/php/pace/Makefile	/^INSTALL_HEADERS =$/;"	m
+IN_REDIRECT	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$IN_REDIRECT = false;$/;"	v
+IN_REDIRECT	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$IN_REDIRECT = eval($section_text['REDIRECTTEST']);$/;"	v
+JUNIT	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$JUNIT = FALSE;$/;"	v
+JUNIT	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$JUNIT = array($/;"	v
+JUNIT	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$JUNIT = getenv('TEST_PHP_JUNIT');$/;"	v
+LDFLAGS	/mnt/linux/project/pace/php/pace/Makefile	/^LDFLAGS =$/;"	m
+LFLAGS	/mnt/linux/project/pace/php/pace/Makefile	/^LFLAGS =$/;"	m
+LIBTOOL	/mnt/linux/project/pace/php/pace/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LT_OBJDIR	/mnt/linux/project/pace/php/pace/config.h	39;"	d
+PACE_AUTHOR	/mnt/linux/project/pace/php/pace/php_pace.h	26;"	d
+PACE_COPYRIGHT	/mnt/linux/project/pace/php/pace/php_pace.h	27;"	d
+PACE_COPYRIGHT_SHORT	/mnt/linux/project/pace/php/pace/php_pace.h	28;"	d
+PACE_G	/mnt/linux/project/pace/php/pace/php_pace.h	107;"	d
+PACE_NAME	/mnt/linux/project/pace/php/pace/php_pace.h	24;"	d
+PACE_SELINUX_H	/mnt/linux/project/pace/php/pace/pace_selinux.h	2;"	d
+PACE_SHARED_LIBADD	/mnt/linux/project/pace/php/pace/Makefile	/^PACE_SHARED_LIBADD = -lselinux -laudit$/;"	m
+PACE_URL	/mnt/linux/project/pace/php/pace/php_pace.h	29;"	d
+PACE_URL_FAQ	/mnt/linux/project/pace/php/pace/php_pace.h	30;"	d
+PACE_VERSION	/mnt/linux/project/pace/php/pace/php_pace.h	25;"	d
+PACKAGE_BUGREPORT	/mnt/linux/project/pace/php/pace/config.h	45;"	d
+PACKAGE_NAME	/mnt/linux/project/pace/php/pace/config.h	48;"	d
+PACKAGE_STRING	/mnt/linux/project/pace/php/pace/config.h	51;"	d
+PACKAGE_TARNAME	/mnt/linux/project/pace/php/pace/config.h	54;"	d
+PACKAGE_URL	/mnt/linux/project/pace/php/pace/config.h	57;"	d
+PACKAGE_VERSION	/mnt/linux/project/pace/php/pace/config.h	60;"	d
+PHP_DEPRECATED_DIRECTIVES_REGEX	/mnt/linux/project/pace/php/pace/Makefile	/^PHP_DEPRECATED_DIRECTIVES_REGEX = '^(magic_quotes_(gpc|runtime|sybase)?|(zend_)?extension(_debug)?(_ts)?)[\\t\\ ]*='$/;"	m
+PHP_EXECUTABLE	/mnt/linux/project/pace/php/pace/Makefile	/^PHP_EXECUTABLE = \/usr\/bin\/php$/;"	m
+PHP_FAILED_TESTS	/mnt/linux/project/pace/php/pace/run-tests.php	/^$PHP_FAILED_TESTS = array('BORKED' => array(), 'FAILED' => array(), 'WARNED' => array(), 'LEAKED' => array(), 'XFAILED' => array());$/;"	v
+PHP_FUNCTION	/mnt/linux/project/pace/php/pace/pace.c	/^PHP_FUNCTION(confirm_pace_compiled)$/;"	f
+PHP_GINIT_FUNCTION	/mnt/linux/project/pace/php/pace/pace.c	/^static PHP_GINIT_FUNCTION(pace)$/;"	f	file:
+PHP_MAJOR_VERSION	/mnt/linux/project/pace/php/pace/run-tests.php	/^	define("PHP_MAJOR_VERSION", $major);$/;"	d
+PHP_MINFO_FUNCTION	/mnt/linux/project/pace/php/pace/pace.c	/^PHP_MINFO_FUNCTION(pace)$/;"	f
+PHP_MINIT_FUNCTION	/mnt/linux/project/pace/php/pace/pace.c	/^PHP_MINIT_FUNCTION(pace)$/;"	f
+PHP_MODULES	/mnt/linux/project/pace/php/pace/Makefile	/^PHP_MODULES = $(phplibdir)\/pace.la$/;"	m
+PHP_MSHUTDOWN_FUNCTION	/mnt/linux/project/pace/php/pace/pace.c	/^PHP_MSHUTDOWN_FUNCTION(pace)$/;"	f
+PHP_PACE_API	/mnt/linux/project/pace/php/pace/php_pace.h	38;"	d
+PHP_PACE_API	/mnt/linux/project/pace/php/pace/php_pace.h	40;"	d
+PHP_PACE_API	/mnt/linux/project/pace/php/pace/php_pace.h	42;"	d
+PHP_PACE_H	/mnt/linux/project/pace/php/pace/php_pace.h	22;"	d
+PHP_PECL_EXTENSION	/mnt/linux/project/pace/php/pace/Makefile	/^PHP_PECL_EXTENSION = pace$/;"	m
+PHP_QA_EMAIL	/mnt/linux/project/pace/php/pace/run-tests.php	/^define('PHP_QA_EMAIL', 'qa-reports@lists.php.net');$/;"	d
+PHP_RINIT_FUNCTION	/mnt/linux/project/pace/php/pace/pace.c	/^PHP_RINIT_FUNCTION(pace)$/;"	f
+PHP_RSHUTDOWN_FUNCTION	/mnt/linux/project/pace/php/pace/pace.c	/^PHP_RSHUTDOWN_FUNCTION(pace)$/;"	f
+PHP_TEST_SETTINGS	/mnt/linux/project/pace/php/pace/Makefile	/^PHP_TEST_SETTINGS = -d 'open_basedir=' -d 'output_buffering=0' -d 'memory_limit=-1'$/;"	m
+PHP_TEST_SHARED_EXTENSIONS	/mnt/linux/project/pace/php/pace/Makefile	/^PHP_TEST_SHARED_EXTENSIONS =  ` \\$/;"	m
+PHP_VERSION_ID	/mnt/linux/project/pace/php/pace/run-tests.php	/^	define("PHP_VERSION_ID", "{$major}0{$minor}$bug");$/;"	d
+PHP_ZEND_EX	/mnt/linux/project/pace/php/pace/Makefile	/^PHP_ZEND_EX =$/;"	m
+QA_REPORTS_PAGE	/mnt/linux/project/pace/php/pace/run-tests.php	/^define('QA_REPORTS_PAGE', 'http:\/\/qa.php.net\/reports');$/;"	d
+QA_SUBMISSION_PAGE	/mnt/linux/project/pace/php/pace/run-tests.php	/^define('QA_SUBMISSION_PAGE', 'http:\/\/qa.php.net\/buildtest-process.php');$/;"	d
+RE2C	/mnt/linux/project/pace/php/pace/Makefile	/^RE2C = exit 0;$/;"	m
+SED	/mnt/linux/project/pace/php/pace/Makefile	/^SED = \/usr\/bin\/sed$/;"	m
+SHARED_LIBTOOL	/mnt/linux/project/pace/php/pace/Makefile	/^SHARED_LIBTOOL =$/;"	m
+SHELL	/mnt/linux/project/pace/php/pace/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHLIB_DL_SUFFIX_NAME	/mnt/linux/project/pace/php/pace/Makefile	/^SHLIB_DL_SUFFIX_NAME = so$/;"	m
+SHLIB_SUFFIX_NAME	/mnt/linux/project/pace/php/pace/Makefile	/^SHLIB_SUFFIX_NAME = so$/;"	m
+SHOW_ONLY_GROUPS	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$SHOW_ONLY_GROUPS = explode(",", $argv[++$i]);;$/;"	v
+SHOW_ONLY_GROUPS	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$SHOW_ONLY_GROUPS = array();$/;"	v
+SHOW_ONLY_GROUPS	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$SHOW_ONLY_GROUPS = explode(",", getenv('SHOW_ONLY_GROUPS'));$/;"	v
+STDC_HEADERS	/mnt/linux/project/pace/php/pace/config.h	63;"	d
+TESTED_PHP_VERSION	/mnt/linux/project/pace/php/pace/run-tests.php	/^	define('TESTED_PHP_VERSION', `$php -n -r "echo PHP_VERSION;"`);$/;"	d
+TRAVIS_CI	/mnt/linux/project/pace/php/pace/run-tests.php	/^define('TRAVIS_CI' , (bool) getenv('TRAVIS_PHP_VERSION'));$/;"	d
+TSRMLS_D	/mnt/linux/project/pace/php/pace/php_pace.h	/^  TSRMLS_D;$/;"	m	struct:_zend_compile_args
+TSRMLS_D	/mnt/linux/project/pace/php/pace/php_pace.h	/^  TSRMLS_D;$/;"	m	struct:_zend_execute_args
+ZEND_EXT_API	/mnt/linux/project/pace/php/pace/pace.c	273;"	d	file:
+ZEND_EXT_TYPE	/mnt/linux/project/pace/php/pace/Makefile	/^ZEND_EXT_TYPE = zend_extension$/;"	m
+__DIR__	/mnt/linux/project/pace/php/pace/run-tests.php	/^	define('__DIR__', realpath(dirname(__FILE__)));$/;"	d
+_zend_compile_args	/mnt/linux/project/pace/php/pace/php_pace.h	/^typedef struct _zend_compile_args {$/;"	s
+_zend_compile_retval	/mnt/linux/project/pace/php/pace/php_pace.h	/^typedef struct _zend_compile_retval {$/;"	s
+_zend_execute_args	/mnt/linux/project/pace/php/pace/php_pace.h	/^typedef struct _zend_execute_args {$/;"	s
+_zend_execute_retval	/mnt/linux/project/pace/php/pace/php_pace.h	/^typedef struct _zend_execute_retval {$/;"	s
+a	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$a = test_name($a);$/;"	v
+ac_fn_c_check_func	/mnt/linux/project/pace/php/pace/configure	/^ac_fn_c_check_func ()$/;"	f
+ac_fn_c_check_header_compile	/mnt/linux/project/pace/php/pace/configure	/^ac_fn_c_check_header_compile ()$/;"	f
+ac_fn_c_try_compile	/mnt/linux/project/pace/php/pace/configure	/^ac_fn_c_try_compile ()$/;"	f
+ac_fn_c_try_cpp	/mnt/linux/project/pace/php/pace/configure	/^ac_fn_c_try_cpp ()$/;"	f
+ac_fn_c_try_link	/mnt/linux/project/pace/php/pace/configure	/^ac_fn_c_try_link ()$/;"	f
+ac_fn_c_try_run	/mnt/linux/project/pace/php/pace/configure	/^ac_fn_c_try_run ()$/;"	f
+all_targets	/mnt/linux/project/pace/php/pace/Makefile	/^all_targets = $(PHP_MODULES) $(PHP_ZEND_EX)$/;"	m
+argc	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$argc = count($argv);$/;"	v
+args	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$args = isset($section_text['ARGS']) ? ' -- ' . $section_text['ARGS'] : '';$/;"	v
+argv	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$argv = array(__FILE__);$/;"	v
+argv	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$argv = array_merge($argv, explode(' ', getenv('TEST_PHP_ARGS')));$/;"	v
+as_fn_append	/mnt/linux/project/pace/php/pace/config.status	/^  as_fn_append ()$/;"	f
+as_fn_append	/mnt/linux/project/pace/php/pace/configure	/^  as_fn_append ()$/;"	f
+as_fn_arith	/mnt/linux/project/pace/php/pace/config.status	/^  as_fn_arith ()$/;"	f
+as_fn_arith	/mnt/linux/project/pace/php/pace/configure	/^  as_fn_arith ()$/;"	f
+as_fn_error	/mnt/linux/project/pace/php/pace/config.status	/^as_fn_error ()$/;"	f
+as_fn_error	/mnt/linux/project/pace/php/pace/configure	/^as_fn_error ()$/;"	f
+as_fn_executable_p	/mnt/linux/project/pace/php/pace/config.status	/^as_fn_executable_p ()$/;"	f
+as_fn_executable_p	/mnt/linux/project/pace/php/pace/configure	/^as_fn_executable_p ()$/;"	f
+as_fn_exit	/mnt/linux/project/pace/php/pace/config.status	/^as_fn_exit ()$/;"	f
+as_fn_exit	/mnt/linux/project/pace/php/pace/configure	/^as_fn_exit ()$/;"	f
+as_fn_failure	/mnt/linux/project/pace/php/pace/configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f
+as_fn_mkdir_p	/mnt/linux/project/pace/php/pace/config.status	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	/mnt/linux/project/pace/php/pace/configure	/^as_fn_mkdir_p ()$/;"	f
+as_fn_ret_failure	/mnt/linux/project/pace/php/pace/configure	/^as_fn_ret_failure () { return 1; }$/;"	f
+as_fn_ret_success	/mnt/linux/project/pace/php/pace/configure	/^as_fn_ret_success () { return 0; }$/;"	f
+as_fn_set_status	/mnt/linux/project/pace/php/pace/config.status	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	/mnt/linux/project/pace/php/pace/configure	/^as_fn_set_status ()$/;"	f
+as_fn_success	/mnt/linux/project/pace/php/pace/configure	/^as_fn_success () { as_fn_return 0; }$/;"	f
+as_fn_unset	/mnt/linux/project/pace/php/pace/config.status	/^as_fn_unset ()$/;"	f
+as_fn_unset	/mnt/linux/project/pace/php/pace/configure	/^as_fn_unset ()$/;"	f
+autoconf	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$autoconf = shell_exec('autoconf --version');$/;"	v
+autoconf	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$autoconf = shell_exec(getenv('PHP_AUTOCONF') . ' --version');$/;"	v
+b	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$b = test_name($b);$/;"	v
+bailout	/mnt/linux/project/pace/php/pace/php_pace.h	/^  int bailout;$/;"	m	struct:_zend_compile_retval
+bailout	/mnt/linux/project/pace/php/pace/php_pace.h	/^  int bailout;$/;"	m	struct:_zend_execute_retval
+bin_env	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$bin_env = array();$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$bork_info = "could not load --FILE_EXTERNAL-- " . dirname($file) . '\/' . trim($section_text['FILE_EXTERNAL']);$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$bork_info = "Can't redirect a test from within a redirected test";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$bork_info = "duplicated $section section";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$bork_info = "missing section --EXPECT--, --EXPECTF-- or --EXPECTREGEX--";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$bork_info = "missing section --FILE--";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$bork_info = "Redirect info must contain exactly one TEST string to be used as redirect directory.";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$bork_info = "cannot read test";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$bork_info = "Redirected test did not contain redirection info";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$bork_info = "empty test [$file]";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$bork_info = "tests must start with --TEST-- [$file]";$/;"	v
+bork_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$bork_info = '';$/;"	v
+borked	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$borked = true;$/;"	v
+borked	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$borked    = true;$/;"	v
+borked	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$borked = false;$/;"	v
+borked	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$borked = true;$/;"	v
+borked	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$borked = true;$/;"	v
+borked	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$borked = true;$/;"	v
+borked	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$borked = false;$/;"	v
+br	/mnt/linux/project/pace/php/pace/pace.php	/^$br = (php_sapi_name() == "cli")? "":"<br>";$/;"	v
+bug	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$bug = "0$bug";$/;"	v
+bug	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$bug = (int)$bug; \/\/ Many distros make up their own versions$/;"	v
+builddir	/mnt/linux/project/pace/php/pace/Makefile	/^builddir = \/mnt\/linux\/project\/pace\/php\/pace$/;"	m
+c1	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$c1 = @count_array_diff($ar1, $ar2, $is_reg, $w, $idx1+1, $idx2, $cnt1, $cnt2, 10);$/;"	v
+c2	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$c2 = @count_array_diff($ar1, $ar2, $is_reg, $w, $idx1, $idx2+1, $cnt1,  $cnt2, 10);$/;"	v
+cc_status	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$cc_status = 0;$/;"	v
+cfg	/mnt/linux/project/pace/php/pace/run-tests.php	/^$cfg = array();$/;"	v
+cfgfiles	/mnt/linux/project/pace/php/pace/run-tests.php	/^$cfgfiles = array('skip', 'php', 'clean', 'out', 'diff', 'exp');$/;"	v
+cfgtypes	/mnt/linux/project/pace/php/pace/run-tests.php	/^$cfgtypes = array('show', 'keep');$/;"	v
+clean_params	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$clean_params = array();$/;"	v
+cmd	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$cmd = "valgrind -q --tool=memcheck --trace-children=yes --log-file-exactly=$memcheck_filename $cmd";$/;"	v
+cmd	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$cmd = "valgrind -q --tool=memcheck --trace-children=yes --log-file=$memcheck_filename $cmd";$/;"	v
+cmd	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$cmd = "$php $pass_options $ini_settings -f \\"$test_file\\" $args 2>&1";$/;"	v
+cmd	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$cmd = "$php $pass_options $ini_settings -f \\"$test_file\\" 2>&1 < \\"$tmp_post\\"";$/;"	v
+cmd	/mnt/linux/project/pace/php/pace/run-tests.php	/^        $cmd = "$php $pass_options $ini_settings -f \\"$test_file\\" 2>&1 < \\"$tmp_post\\"";$/;"	v
+code	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$code = proc_close($proc);$/;"	v
+comp_line	/mnt/linux/project/pace/php/pace/run-tests.php	/^function comp_line($l1, $l2, $is_reg)$/;"	f
+compiler	/mnt/linux/project/pace/php/pace/run-tests.php	/^						$compiler = shell_exec(getenv('CC') . " $flag 2>&1");$/;"	v
+compression	/mnt/linux/project/pace/php/pace/run-tests.php	/^$compression = 0;$/;"	v
+compute_summary	/mnt/linux/project/pace/php/pace/run-tests.php	/^function compute_summary()$/;"	f
+conf_passed	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$conf_passed = $argv[++$i];$/;"	v
+conf_passed	/mnt/linux/project/pace/php/pace/run-tests.php	/^$conf_passed = null;$/;"	v
+content_length	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$content_length = strlen($post);$/;"	v
+content_length	/mnt/linux/project/pace/php/pace/run-tests.php	/^        $content_length = strlen($post);$/;"	v
+copy_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$copy_file     = $temp_dir . DIRECTORY_SEPARATOR . basename(is_array($file) ? $file[1] : $file) . '.phps';$/;"	v
+count_array_diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^function count_array_diff($ar1, $ar2, $is_reg, $w, $idx1, $idx2, $cnt1, $cnt2, $steps)$/;"	f
+cwd	/mnt/linux/project/pace/php/pace/run-tests.php	/^$cwd = getcwd();$/;"	v
+data	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$data = "php_test_data=" . urlencode(base64_encode(str_replace("\\00", '[0x0]', $data)));$/;"	v
+data	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$data = '';$/;"	v
+data_length	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$data_length = strlen($data);$/;"	v
+diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$diff = "# original source file: $shortname\\n" . $diff;$/;"	v
+diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$diff = "&nbsp;";$/;"	v
+diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$diff = "<a href='$url'>diff<\/a>";$/;"	v
+diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$diff = generate_diff($wanted, $wanted_re, $output);$/;"	v
+diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$diff = array();$/;"	v
+diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$diff = empty($diff) ? '' : "<![CDATA[\\n " . preg_replace('\/\\e\/', '<esc>', $diff) . "\\n]]>";$/;"	v
+diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$diff = generate_array_diff($r, $o, !is_null($wanted_re), $w);$/;"	v
+diff_filename	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$diff_filename     = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'diff';$/;"	v
+e	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$e = explode('=', trim($e), 2);$/;"	v
+e	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$e = null;$/;"	v
+end	/mnt/linux/project/pace/php/pace/run-tests.php	/^						$end = $start = $length;$/;"	v
+end	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$end = strpos($wanted_re, $r, $start+2);$/;"	v
+end_time	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$end_time = time();$/;"	v
+end_time	/mnt/linux/project/pace/php/pace/run-tests.php	/^$end_time = time();$/;"	v
+env	/mnt/linux/project/pace/php/pace/run-tests.php	/^function system_with_timeout($commandline, $env = null, $stdin = null)$/;"	v
+environment	/mnt/linux/project/pace/php/pace/run-tests.php	/^$environment = isset($_ENV) ? $_ENV : array();$/;"	v
+eq	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$eq = @count_array_diff($ar1, $ar2, $is_reg, $w, $idx1, $ofs2, $cnt1, $cnt2, $st);$/;"	v
+eq	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$eq = @count_array_diff($ar1, $ar2, $is_reg, $w, $ofs1, $idx2, $cnt1, $cnt2, $st);$/;"	v
+eq1	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$eq1 = $eq;$/;"	v
+eq1	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$eq1 = 0;$/;"	v
+eq2	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$eq2 = $eq;$/;"	v
+eq2	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$eq2 = 0;$/;"	v
+equal	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$equal = 0;$/;"	v
+error	/mnt/linux/project/pace/php/pace/run-tests.php	/^function error($message)$/;"	f
+error_report	/mnt/linux/project/pace/php/pace/run-tests.php	/^function error_report($testname, $logname, $tested)$/;"	f
+escaped_details	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$escaped_details = htmlspecialchars($details, ENT_QUOTES, 'UTF-8');$/;"	v
+escaped_test_name	/mnt/linux/project/pace/php/pace/run-tests.php	/^    $escaped_test_name = basename($file_name) . ' - ' . htmlspecialchars($test_name, ENT_QUOTES);$/;"	v
+exec_prefix	/mnt/linux/project/pace/php/pace/Makefile	/^exec_prefix = $(prefix)$/;"	m
+exp_filename	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$exp_filename      = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'exp';$/;"	v
+ext	/mnt/linux/project/pace/php/pace/run-tests.php	/^	foreach($info_params_ex as $ext => $ini_overwrites_ex) {$/;"	v
+ext_dir	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$ext_dir=`$php -r 'echo ini_get("extension_dir");'`;$/;"	v
+extensions	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$extensions = preg_split("\/[\\n\\r]+\/", trim($section_text['EXTENSIONS']));$/;"	v
+extra	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$extra = "skipif";$/;"	v
+extra	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$extra = substr(PHP_OS, 0, 3) !== "WIN" ?$/;"	v
+extra	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$extra = "&nbsp;";$/;"	v
+extra	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$extra = "<a href='$url'>$extra<\/a>";$/;"	v
+extra	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$extra = substr(PHP_OS, 0, 3) !== "WIN" ?$/;"	v
+extra	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_result($result, $tested, $tested_file, $extra = '', $temp_filenames = null)$/;"	v
+exts_skipped	/mnt/linux/project/pace/php/pace/run-tests.php	/^$exts_skipped = 0;$/;"	v
+exts_tested	/mnt/linux/project/pace/php/pace/run-tests.php	/^$exts_tested = count($exts_to_test);$/;"	v
+exts_to_test	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$exts_to_test = explode(',',`$php $pass_options $info_params "$info_file"`);$/;"	v
+exts_to_test	/mnt/linux/project/pace/php/pace/run-tests.php	/^$exts_to_test = array();$/;"	v
+failed_headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$failed_headers = true;$/;"	v
+failed_headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$failed_headers = false;$/;"	v
+failed_test_summary	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$failed_test_summary = '';$/;"	v
+failed_tests_data	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$failed_tests_data = '';$/;"	v
+failed_tests_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$failed_tests_file = fopen($argv[++$i], 'a+t');$/;"	v
+failed_tests_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$failed_tests_file = fopen($argv[++$i], 'w+t');$/;"	v
+failed_tests_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^$failed_tests_file= false;$/;"	v
+file	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$file = $org_file[0];$/;"	v
+file	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$file = $file[0];$/;"	v
+file_handle	/mnt/linux/project/pace/php/pace/php_pace.h	/^  zend_file_handle* file_handle;$/;"	m	struct:_zend_compile_args
+filename_copy	/mnt/linux/project/pace/php/pace/run-tests.php	/^function save_text($filename, $text, $filename_copy = null)$/;"	v
+find_files	/mnt/linux/project/pace/php/pace/run-tests.php	/^function find_files($dir, $is_ext_dir = false, $ignore = false)$/;"	f
+flags	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$flags = array('-v', '-V', '--version');$/;"	v
+fp	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$fp = fopen("php:\/\/stdin", "r+");$/;"	v
+fp	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$fp = fopen($file, "rb") or error("Cannot open test file: $file");$/;"	v
+fs	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$fs = fsockopen($host, $port, $errno, $errstr, 10);$/;"	v
+func_append	/mnt/linux/project/pace/php/pace/config.status	/^func_append ()\\$/;"	f
+func_append	/mnt/linux/project/pace/php/pace/configure	/^func_append ()\\$/;"	f
+func_append	/mnt/linux/project/pace/php/pace/libtool	/^func_append ()$/;"	f
+func_append	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_append ()$/;"	f
+func_append_quoted	/mnt/linux/project/pace/php/pace/config.status	/^func_append_quoted ()\\$/;"	f
+func_append_quoted	/mnt/linux/project/pace/php/pace/configure	/^func_append_quoted ()\\$/;"	f
+func_append_quoted	/mnt/linux/project/pace/php/pace/libtool	/^func_append_quoted ()$/;"	f
+func_append_quoted	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_append_quoted ()$/;"	f
+func_arith	/mnt/linux/project/pace/php/pace/config.status	/^func_arith ()\\$/;"	f
+func_arith	/mnt/linux/project/pace/php/pace/configure	/^func_arith ()\\$/;"	f
+func_arith	/mnt/linux/project/pace/php/pace/libtool	/^func_arith ()$/;"	f
+func_arith	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_arith ()$/;"	f
+func_basename	/mnt/linux/project/pace/php/pace/config.status	/^func_basename ()\\$/;"	f
+func_basename	/mnt/linux/project/pace/php/pace/configure	/^func_basename ()\\$/;"	f
+func_basename	/mnt/linux/project/pace/php/pace/libtool	/^func_basename ()$/;"	f
+func_basename	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_basename ()$/;"	f
+func_check_version_match	/mnt/linux/project/pace/php/pace/libtool	/^func_check_version_match ()$/;"	f
+func_check_version_match	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_check_version_match ()$/;"	f
+func_config	/mnt/linux/project/pace/php/pace/libtool	/^func_config ()$/;"	f
+func_config	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_config ()$/;"	f
+func_convert_core_file_wine_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_core_file_wine_to_w32 ()$/;"	f
+func_convert_core_file_wine_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_core_file_wine_to_w32 ()$/;"	f
+func_convert_core_msys_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_core_msys_to_w32 ()$/;"	f
+func_convert_core_msys_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_core_msys_to_w32 ()$/;"	f
+func_convert_core_path_wine_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_core_path_wine_to_w32 ()$/;"	f
+func_convert_core_path_wine_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_core_path_wine_to_w32 ()$/;"	f
+func_convert_file_check	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_file_check ()$/;"	f
+func_convert_file_check	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_file_check ()$/;"	f
+func_convert_file_cygwin_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_file_cygwin_to_w32 ()$/;"	f
+func_convert_file_cygwin_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_file_cygwin_to_w32 ()$/;"	f
+func_convert_file_msys_to_cygwin	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_file_msys_to_cygwin ()$/;"	f
+func_convert_file_msys_to_cygwin	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_file_msys_to_cygwin ()$/;"	f
+func_convert_file_msys_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_file_msys_to_w32 ()$/;"	f
+func_convert_file_msys_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_file_msys_to_w32 ()$/;"	f
+func_convert_file_nix_to_cygwin	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_file_nix_to_cygwin ()$/;"	f
+func_convert_file_nix_to_cygwin	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_file_nix_to_cygwin ()$/;"	f
+func_convert_file_nix_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_file_nix_to_w32 ()$/;"	f
+func_convert_file_nix_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_file_nix_to_w32 ()$/;"	f
+func_convert_file_noop	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_file_noop ()$/;"	f
+func_convert_file_noop	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_file_noop ()$/;"	f
+func_convert_path_check	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_path_check ()$/;"	f
+func_convert_path_check	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_path_check ()$/;"	f
+func_convert_path_cygwin_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_path_cygwin_to_w32 ()$/;"	f
+func_convert_path_cygwin_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_path_cygwin_to_w32 ()$/;"	f
+func_convert_path_front_back_pathsep	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_path_front_back_pathsep ()$/;"	f
+func_convert_path_front_back_pathsep	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_path_front_back_pathsep ()$/;"	f
+func_convert_path_msys_to_cygwin	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_path_msys_to_cygwin ()$/;"	f
+func_convert_path_msys_to_cygwin	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_path_msys_to_cygwin ()$/;"	f
+func_convert_path_msys_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_path_msys_to_w32 ()$/;"	f
+func_convert_path_msys_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_path_msys_to_w32 ()$/;"	f
+func_convert_path_nix_to_cygwin	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_path_nix_to_cygwin ()$/;"	f
+func_convert_path_nix_to_cygwin	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_path_nix_to_cygwin ()$/;"	f
+func_convert_path_nix_to_w32	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_path_nix_to_w32 ()$/;"	f
+func_convert_path_nix_to_w32	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_path_nix_to_w32 ()$/;"	f
+func_convert_path_noop	/mnt/linux/project/pace/php/pace/libtool	/^func_convert_path_noop ()$/;"	f
+func_convert_path_noop	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_convert_path_noop ()$/;"	f
+func_cygming_dll_for_implib	/mnt/linux/project/pace/php/pace/libtool	/^func_cygming_dll_for_implib ()$/;"	f
+func_cygming_dll_for_implib	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_cygming_dll_for_implib ()$/;"	f
+func_cygming_dll_for_implib_fallback	/mnt/linux/project/pace/php/pace/libtool	/^func_cygming_dll_for_implib_fallback ()$/;"	f
+func_cygming_dll_for_implib_fallback	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_cygming_dll_for_implib_fallback ()$/;"	f
+func_cygming_dll_for_implib_fallback_core	/mnt/linux/project/pace/php/pace/libtool	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
+func_cygming_dll_for_implib_fallback_core	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
+func_cygming_gnu_implib_p	/mnt/linux/project/pace/php/pace/libtool	/^func_cygming_gnu_implib_p ()$/;"	f
+func_cygming_gnu_implib_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_cygming_gnu_implib_p ()$/;"	f
+func_cygming_ms_implib_p	/mnt/linux/project/pace/php/pace/libtool	/^func_cygming_ms_implib_p ()$/;"	f
+func_cygming_ms_implib_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_cygming_ms_implib_p ()$/;"	f
+func_cygpath	/mnt/linux/project/pace/php/pace/libtool	/^func_cygpath ()$/;"	f
+func_cygpath	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_cygpath ()$/;"	f
+func_dirname	/mnt/linux/project/pace/php/pace/config.status	/^func_dirname ()\\$/;"	f
+func_dirname	/mnt/linux/project/pace/php/pace/configure	/^func_dirname ()\\$/;"	f
+func_dirname	/mnt/linux/project/pace/php/pace/libtool	/^func_dirname ()$/;"	f
+func_dirname	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_dirname ()$/;"	f
+func_dirname_and_basename	/mnt/linux/project/pace/php/pace/config.status	/^func_dirname_and_basename ()\\$/;"	f
+func_dirname_and_basename	/mnt/linux/project/pace/php/pace/configure	/^func_dirname_and_basename ()\\$/;"	f
+func_dirname_and_basename	/mnt/linux/project/pace/php/pace/libtool	/^func_dirname_and_basename ()$/;"	f
+func_dirname_and_basename	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_dirname_and_basename ()$/;"	f
+func_echo	/mnt/linux/project/pace/php/pace/libtool	/^func_echo ()$/;"	f
+func_echo	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_echo ()$/;"	f
+func_echo_all	/mnt/linux/project/pace/php/pace/configure	/^func_echo_all ()$/;"	f
+func_echo_all	/mnt/linux/project/pace/php/pace/libtool	/^func_echo_all ()$/;"	f
+func_echo_all	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_echo_all ()$/;"	f
+func_emit_cwrapperexe_src	/mnt/linux/project/pace/php/pace/libtool	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_cwrapperexe_src	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_wrapper	/mnt/linux/project/pace/php/pace/libtool	/^func_emit_wrapper ()$/;"	f
+func_emit_wrapper	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_emit_wrapper ()$/;"	f
+func_enable_tag	/mnt/linux/project/pace/php/pace/libtool	/^func_enable_tag ()$/;"	f
+func_enable_tag	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_enable_tag ()$/;"	f
+func_error	/mnt/linux/project/pace/php/pace/libtool	/^func_error ()$/;"	f
+func_error	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_error ()$/;"	f
+func_exec_program	/mnt/linux/project/pace/php/pace/libtool	/^func_exec_program ()$/;"	f
+func_exec_program	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_exec_program ()$/;"	f
+func_exec_program_core	/mnt/linux/project/pace/php/pace/libtool	/^func_exec_program_core ()$/;"	f
+func_exec_program_core	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_exec_program_core ()$/;"	f
+func_execute_cmds	/mnt/linux/project/pace/php/pace/libtool	/^func_execute_cmds ()$/;"	f
+func_execute_cmds	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_execute_cmds ()$/;"	f
+func_extract_an_archive	/mnt/linux/project/pace/php/pace/libtool	/^func_extract_an_archive ()$/;"	f
+func_extract_an_archive	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_extract_an_archive ()$/;"	f
+func_extract_archives	/mnt/linux/project/pace/php/pace/libtool	/^func_extract_archives ()$/;"	f
+func_extract_archives	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_extract_archives ()$/;"	f
+func_fallback_echo	/mnt/linux/project/pace/php/pace/config.status	/^func_fallback_echo ()$/;"	f
+func_fallback_echo	/mnt/linux/project/pace/php/pace/configure	/^  func_fallback_echo ()$/;"	f
+func_fallback_echo	/mnt/linux/project/pace/php/pace/configure	/^func_fallback_echo ()$/;"	f
+func_fallback_echo	/mnt/linux/project/pace/php/pace/libtool	/^func_fallback_echo ()$/;"	f
+func_fallback_echo	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_fallback_echo ()$/;"	f
+func_fatal_configuration	/mnt/linux/project/pace/php/pace/libtool	/^func_fatal_configuration ()$/;"	f
+func_fatal_configuration	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_fatal_configuration ()$/;"	f
+func_fatal_error	/mnt/linux/project/pace/php/pace/libtool	/^func_fatal_error ()$/;"	f
+func_fatal_error	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_fatal_error ()$/;"	f
+func_fatal_help	/mnt/linux/project/pace/php/pace/libtool	/^func_fatal_help ()$/;"	f
+func_fatal_help	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_fatal_help ()$/;"	f
+func_features	/mnt/linux/project/pace/php/pace/libtool	/^func_features ()$/;"	f
+func_features	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_features ()$/;"	f
+func_generate_dlsyms	/mnt/linux/project/pace/php/pace/libtool	/^func_generate_dlsyms ()$/;"	f
+func_generate_dlsyms	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_generate_dlsyms ()$/;"	f
+func_grep	/mnt/linux/project/pace/php/pace/libtool	/^func_grep ()$/;"	f
+func_grep	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_grep ()$/;"	f
+func_help	/mnt/linux/project/pace/php/pace/libtool	/^func_help ()$/;"	f
+func_help	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_help ()$/;"	f
+func_infer_tag	/mnt/linux/project/pace/php/pace/libtool	/^func_infer_tag ()$/;"	f
+func_infer_tag	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_infer_tag ()$/;"	f
+func_init_to_host_path_cmd	/mnt/linux/project/pace/php/pace/libtool	/^func_init_to_host_path_cmd ()$/;"	f
+func_init_to_host_path_cmd	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_init_to_host_path_cmd ()$/;"	f
+func_lalib_p	/mnt/linux/project/pace/php/pace/libtool	/^func_lalib_p ()$/;"	f
+func_lalib_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_lalib_p ()$/;"	f
+func_lalib_unsafe_p	/mnt/linux/project/pace/php/pace/libtool	/^func_lalib_unsafe_p ()$/;"	f
+func_lalib_unsafe_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_lalib_unsafe_p ()$/;"	f
+func_len	/mnt/linux/project/pace/php/pace/config.status	/^func_len ()\\$/;"	f
+func_len	/mnt/linux/project/pace/php/pace/configure	/^func_len ()\\$/;"	f
+func_len	/mnt/linux/project/pace/php/pace/libtool	/^func_len ()$/;"	f
+func_len	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_len ()$/;"	f
+func_lo2o	/mnt/linux/project/pace/php/pace/config.status	/^func_lo2o ()\\$/;"	f
+func_lo2o	/mnt/linux/project/pace/php/pace/configure	/^func_lo2o ()\\$/;"	f
+func_lo2o	/mnt/linux/project/pace/php/pace/libtool	/^func_lo2o ()$/;"	f
+func_lo2o	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_lo2o ()$/;"	f
+func_lt_dump_args	/mnt/linux/project/pace/php/pace/libtool	/^func_lt_dump_args ()$/;"	f
+func_lt_dump_args	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_lt_dump_args ()$/;"	f
+func_ltwrapper_executable_p	/mnt/linux/project/pace/php/pace/libtool	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_executable_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_p	/mnt/linux/project/pace/php/pace/libtool	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_script_p	/mnt/linux/project/pace/php/pace/libtool	/^func_ltwrapper_script_p ()$/;"	f
+func_ltwrapper_script_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_ltwrapper_script_p ()$/;"	f
+func_ltwrapper_scriptname	/mnt/linux/project/pace/php/pace/libtool	/^func_ltwrapper_scriptname ()$/;"	f
+func_ltwrapper_scriptname	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_ltwrapper_scriptname ()$/;"	f
+func_missing_arg	/mnt/linux/project/pace/php/pace/libtool	/^func_missing_arg ()$/;"	f
+func_missing_arg	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_missing_arg ()$/;"	f
+func_mkdir_p	/mnt/linux/project/pace/php/pace/libtool	/^func_mkdir_p ()$/;"	f
+func_mkdir_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mkdir_p ()$/;"	f
+func_mktempdir	/mnt/linux/project/pace/php/pace/libtool	/^func_mktempdir ()$/;"	f
+func_mktempdir	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mktempdir ()$/;"	f
+func_mode_compile	/mnt/linux/project/pace/php/pace/libtool	/^func_mode_compile ()$/;"	f
+func_mode_compile	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mode_compile ()$/;"	f
+func_mode_execute	/mnt/linux/project/pace/php/pace/libtool	/^func_mode_execute ()$/;"	f
+func_mode_execute	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mode_execute ()$/;"	f
+func_mode_finish	/mnt/linux/project/pace/php/pace/libtool	/^func_mode_finish ()$/;"	f
+func_mode_finish	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mode_finish ()$/;"	f
+func_mode_help	/mnt/linux/project/pace/php/pace/libtool	/^func_mode_help ()$/;"	f
+func_mode_help	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mode_help ()$/;"	f
+func_mode_install	/mnt/linux/project/pace/php/pace/libtool	/^func_mode_install ()$/;"	f
+func_mode_install	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mode_install ()$/;"	f
+func_mode_link	/mnt/linux/project/pace/php/pace/libtool	/^func_mode_link ()$/;"	f
+func_mode_link	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mode_link ()$/;"	f
+func_mode_uninstall	/mnt/linux/project/pace/php/pace/libtool	/^func_mode_uninstall ()$/;"	f
+func_mode_uninstall	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_mode_uninstall ()$/;"	f
+func_normal_abspath	/mnt/linux/project/pace/php/pace/libtool	/^func_normal_abspath ()$/;"	f
+func_normal_abspath	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_normal_abspath ()$/;"	f
+func_parse_lt_options	/mnt/linux/project/pace/php/pace/libtool	/^func_parse_lt_options ()$/;"	f
+func_parse_lt_options	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_parse_lt_options ()$/;"	f
+func_quote_for_eval	/mnt/linux/project/pace/php/pace/libtool	/^func_quote_for_eval ()$/;"	f
+func_quote_for_eval	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_quote_for_eval ()$/;"	f
+func_quote_for_expand	/mnt/linux/project/pace/php/pace/libtool	/^func_quote_for_expand ()$/;"	f
+func_quote_for_expand	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_quote_for_expand ()$/;"	f
+func_relative_path	/mnt/linux/project/pace/php/pace/libtool	/^func_relative_path ()$/;"	f
+func_relative_path	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_relative_path ()$/;"	f
+func_replace_sysroot	/mnt/linux/project/pace/php/pace/libtool	/^func_replace_sysroot ()$/;"	f
+func_replace_sysroot	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_replace_sysroot ()$/;"	f
+func_resolve_sysroot	/mnt/linux/project/pace/php/pace/libtool	/^func_resolve_sysroot ()$/;"	f
+func_resolve_sysroot	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_resolve_sysroot ()$/;"	f
+func_show_eval	/mnt/linux/project/pace/php/pace/libtool	/^func_show_eval ()$/;"	f
+func_show_eval	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_show_eval ()$/;"	f
+func_show_eval_locale	/mnt/linux/project/pace/php/pace/libtool	/^func_show_eval_locale ()$/;"	f
+func_show_eval_locale	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_show_eval_locale ()$/;"	f
+func_source	/mnt/linux/project/pace/php/pace/libtool	/^func_source ()$/;"	f
+func_source	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_source ()$/;"	f
+func_split_long_opt	/mnt/linux/project/pace/php/pace/config.status	/^func_split_long_opt ()\\$/;"	f
+func_split_long_opt	/mnt/linux/project/pace/php/pace/configure	/^func_split_long_opt ()\\$/;"	f
+func_split_long_opt	/mnt/linux/project/pace/php/pace/libtool	/^func_split_long_opt ()$/;"	f
+func_split_long_opt	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_split_long_opt ()$/;"	f
+func_split_short_opt	/mnt/linux/project/pace/php/pace/config.status	/^func_split_short_opt ()\\$/;"	f
+func_split_short_opt	/mnt/linux/project/pace/php/pace/configure	/^func_split_short_opt ()\\$/;"	f
+func_split_short_opt	/mnt/linux/project/pace/php/pace/libtool	/^func_split_short_opt ()$/;"	f
+func_split_short_opt	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_split_short_opt ()$/;"	f
+func_stripname	/mnt/linux/project/pace/php/pace/config.status	/^func_stripname ()\\$/;"	f
+func_stripname	/mnt/linux/project/pace/php/pace/configure	/^func_stripname ()\\$/;"	f
+func_stripname	/mnt/linux/project/pace/php/pace/libtool	/^func_stripname ()$/;"	f
+func_stripname	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_stripname ()$/;"	f
+func_to_host_file	/mnt/linux/project/pace/php/pace/libtool	/^func_to_host_file ()$/;"	f
+func_to_host_file	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_to_host_file ()$/;"	f
+func_to_host_path	/mnt/linux/project/pace/php/pace/libtool	/^func_to_host_path ()$/;"	f
+func_to_host_path	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_to_host_path ()$/;"	f
+func_to_tool_file	/mnt/linux/project/pace/php/pace/libtool	/^func_to_tool_file ()$/;"	f
+func_to_tool_file	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_to_tool_file ()$/;"	f
+func_tr_sh	/mnt/linux/project/pace/php/pace/libtool	/^func_tr_sh ()$/;"	f
+func_tr_sh	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_tr_sh ()$/;"	f
+func_usage	/mnt/linux/project/pace/php/pace/libtool	/^func_usage ()$/;"	f
+func_usage	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_usage ()$/;"	f
+func_verbose	/mnt/linux/project/pace/php/pace/libtool	/^func_verbose ()$/;"	f
+func_verbose	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_verbose ()$/;"	f
+func_version	/mnt/linux/project/pace/php/pace/libtool	/^func_version ()$/;"	f
+func_version	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_version ()$/;"	f
+func_warning	/mnt/linux/project/pace/php/pace/libtool	/^func_warning ()$/;"	f
+func_warning	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_warning ()$/;"	f
+func_win32_import_lib_p	/mnt/linux/project/pace/php/pace/libtool	/^func_win32_import_lib_p ()$/;"	f
+func_win32_import_lib_p	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_win32_import_lib_p ()$/;"	f
+func_win32_libid	/mnt/linux/project/pace/php/pace/libtool	/^func_win32_libid ()$/;"	f
+func_win32_libid	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_win32_libid ()$/;"	f
+func_write_libtool_object	/mnt/linux/project/pace/php/pace/libtool	/^func_write_libtool_object ()$/;"	f
+func_write_libtool_object	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_write_libtool_object ()$/;"	f
+func_xform	/mnt/linux/project/pace/php/pace/config.status	/^func_xform ()\\$/;"	f
+func_xform	/mnt/linux/project/pace/php/pace/configure	/^func_xform ()\\$/;"	f
+func_xform	/mnt/linux/project/pace/php/pace/libtool	/^func_xform ()$/;"	f
+func_xform	/mnt/linux/project/pace/php/pace/ltmain.sh	/^func_xform ()$/;"	f
+function	/mnt/linux/project/pace/php/pace/pace.php	/^$function = 'confirm_' . $module . '_compiled';$/;"	v
+functions	/mnt/linux/project/pace/php/pace/pace.php	/^$functions = get_extension_funcs($module);$/;"	v
+generate_array_diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^function generate_array_diff($ar1, $ar2, $is_reg, $w)$/;"	f
+generate_diff	/mnt/linux/project/pace/php/pace/run-tests.php	/^function generate_diff($wanted, $wanted_re, $output)$/;"	f
+get_summary	/mnt/linux/project/pace/php/pace/run-tests.php	/^function get_summary($show_ext_summary, $show_html)$/;"	f
+global_string	/mnt/linux/project/pace/php/pace/php_pace.h	/^	char *global_string;$/;"	v
+global_value	/mnt/linux/project/pace/php/pace/php_pace.h	/^	char *global_value;$/;"	v
+headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$headers = $org_headers[$k];$/;"	v
+headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$headers = array();$/;"	v
+headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$headers = "";$/;"	v
+host	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$host = $proxy['host'];$/;"	v
+host	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$host = $url_bits['host'];$/;"	v
+html_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$html_file = fopen($argv[++$i], 'wt');$/;"	v
+html_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^$html_file = null;$/;"	v
+html_output	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$html_output = is_resource($html_file);$/;"	v
+html_output	/mnt/linux/project/pace/php/pace/run-tests.php	/^$html_output = false;$/;"	v
+idx1	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$idx1 = 0; $ofs1 = 0; $cnt1 = @count($ar1);$/;"	v
+idx2	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$idx2 = 0; $ofs2 = 0; $cnt2 = @count($ar2);$/;"	v
+ignored_by_ext	/mnt/linux/project/pace/php/pace/run-tests.php	/^$ignored_by_ext = 0;$/;"	v
+index	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$index = "# $name[1]: $name[0]";$/;"	v
+index	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$index = "# $redir_tested: $name";$/;"	v
+index	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$index = $name;$/;"	v
+info	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$info = " (info: $m[1])";$/;"	v
+info	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$info = " (warn: $m[1])";$/;"	v
+info	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$info = " (warn: XFAIL section but test passes)";$/;"	v
+info	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$info = '  XFAIL REASON: ' . rtrim($section_text['XFAIL']);$/;"	v
+info	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$info = '';$/;"	v
+info_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$info_file = __DIR__ . '\/run-test-info.php';$/;"	v
+info_params	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$info_params = array();$/;"	v
+info_params_ex	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$info_params_ex = array($/;"	v
+ini_overwrites	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$ini_overwrites = array_merge($ini_overwrites, $ini_overwrites_ex);$/;"	v
+ini_overwrites	/mnt/linux/project/pace/php/pace/run-tests.php	/^$ini_overwrites = array($/;"	v
+ini_settings	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$ini_settings = $settings;$/;"	v
+ini_settings	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$ini_settings = array();$/;"	v
+install_targets	/mnt/linux/project/pace/php/pace/Makefile	/^install_targets = install-modules install-headers$/;"	m
+is_ext_dir	/mnt/linux/project/pace/php/pace/run-tests.php	/^function find_files($dir, $is_ext_dir = false, $ignore = false)$/;"	v
+is_switch	/mnt/linux/project/pace/php/pace/run-tests.php	/^								$is_switch = false;$/;"	v
+is_switch	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$is_switch = true;$/;"	v
+is_switch	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$is_switch = true;$/;"	v
+is_switch	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$is_switch = false;$/;"	v
+junit_enabled	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_enabled() {$/;"	f
+junit_finish_timer	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_finish_timer($file_name) {$/;"	f
+junit_get_suite_xml	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_get_suite_xml($suite_name = '') {$/;"	f
+junit_get_suitename_for	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_get_suitename_for($file_name) {$/;"	f
+junit_get_timer	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_get_timer($file_name) {$/;"	f
+junit_init	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_init() {$/;"	f
+junit_init_suite	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_init_suite($suite_name) {$/;"	f
+junit_mark_test_as	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_mark_test_as($type, $file_name, $test_name, $time = null, $message = '', $details = '') {$/;"	f
+junit_path_to_classname	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_path_to_classname($file_name) {$/;"	f
+junit_save_xml	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_save_xml() {$/;"	f
+junit_start_timer	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_start_timer($file_name) {$/;"	f
+junit_suite_record	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_suite_record($suite, $param, $value = 1) {$/;"	f
+just_save_results	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$just_save_results = true;$/;"	v
+just_save_results	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$just_save_results = (strtolower($user_input[0]) == 's');$/;"	v
+just_save_results	/mnt/linux/project/pace/php/pace/run-tests.php	/^$just_save_results = false;$/;"	v
+k	/mnt/linux/project/pace/php/pace/run-tests.php	/^		foreach($want as $k => $v) {$/;"	v
+k1	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$k1 = next($old1) ? key($old1) : null;$/;"	v
+k1	/mnt/linux/project/pace/php/pace/run-tests.php	/^		} else if ($k2 == $l2 + 1 || $k1 === null) {$/;"	v
+k1	/mnt/linux/project/pace/php/pace/run-tests.php	/^	reset($old1); $k1 = key($old1); $l1 = -2;$/;"	v
+k2	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$k2 = next($old2) ? key($old2) : null;$/;"	v
+k2	/mnt/linux/project/pace/php/pace/run-tests.php	/^		if ($k1 == $l1 + 1 || $k2 === null) {$/;"	v
+k2	/mnt/linux/project/pace/php/pace/run-tests.php	/^	reset($old2); $k2 = key($old2); $l2 = -2;$/;"	v
+key	/mnt/linux/project/pace/php/pace/run-tests.php	/^	foreach((array)$env as $key => $value) {$/;"	v
+key	/mnt/linux/project/pace/php/pace/run-tests.php	/^foreach ($exts_to_test as $key => $val) {$/;"	v
+l1	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$l1 = $k1;$/;"	v
+l2	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$l2 = $k2;$/;"	v
+last	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$last = 1;$/;"	v
+last	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$last = 2;$/;"	v
+ldd	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$ldd = shell_exec("ldd $php 2>\/dev\/null");$/;"	v
+ldd	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$ldd = $autoconf = $sys_libtool = $libtool = $compiler = 'N\/A';$/;"	v
+leak_check	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$leak_check = true;$/;"	v
+leak_check	/mnt/linux/project/pace/php/pace/run-tests.php	/^$leak_check = false;$/;"	v
+leaked	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$leaked = filesize($memcheck_filename) > 0;$/;"	v
+leaked	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$leaked = false;$/;"	v
+len	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$len = strlen($value);$/;"	v
+length	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$length = strlen($wanted_re);$/;"	v
+libdir	/mnt/linux/project/pace/php/pace/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libtool	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$libtool = shell_exec($CUR_DIR . '\/libtool --version');$/;"	v
+line	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$line = explode(':', $line, 2);$/;"	v
+line	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$line = fread($pipes[1], 8192);$/;"	v
+line	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$line = fgets($fp);$/;"	v
+line_length	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$line_length = strlen($str);$/;"	v
+lines	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$lines = preg_split("\/[\\n\\r]+\/", $section_text['EXPECTHEADERS']);$/;"	v
+loaded	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$loaded = explode(",", `$php -n -r 'echo join(",", get_loaded_extensions());'`);$/;"	v
+log_callback	/mnt/linux/project/pace/php/pace/pace_selinux.c	/^log_callback (int type, const char *fmt, ...)$/;"	f	file:
+log_filename	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$log_filename      = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'log';$/;"	v
+log_format	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$log_format = 'LEODS';$/;"	v
+log_format	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$log_format = strtoupper(getenv('TEST_PHP_LOG_FORMAT'));$/;"	v
+logname	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$logname  = realpath($logname);$/;"	v
+mail_qa_team	/mnt/linux/project/pace/php/pace/run-tests.php	/^function mail_qa_team($data, $compression, $status = false)$/;"	f
+main	/mnt/linux/project/pace/php/pace/config.guess	/^		main()$/;"	f
+main	/mnt/linux/project/pace/php/pace/config.guess	/^	main ()$/;"	f
+main	/mnt/linux/project/pace/php/pace/config.guess	/^main ()$/;"	f
+main_file_name	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$main_file_name = basename($file,'phpt');$/;"	v
+matches	/mnt/linux/project/pace/php/pace/run-tests.php	/^							$matches = array();$/;"	v
+mem	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$mem = "&nbsp;";$/;"	v
+mem	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$mem = "<a href='$url'>leaks<\/a>";$/;"	v
+memcheck_filename	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$memcheck_filename = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'mem';$/;"	v
+message	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$message = !empty($m[1]) ? $m[1] : '';$/;"	v
+message	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$message = "ext\/zlib required";$/;"	v
+mkinstalldirs	/mnt/linux/project/pace/php/pace/Makefile	/^mkinstalldirs = $(top_srcdir)\/build\/shtool mkdir -p$/;"	m
+module	/mnt/linux/project/pace/php/pace/pace.php	/^$module = 'pace';$/;"	v
+n	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$n = @stream_select($r, $w, $e, $timeout);$/;"	v
+n_total	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$n_total = count($test_results);$/;"	v
+name	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$name = $name[0];$/;"	v
+name	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$name = trim($setting[0]);$/;"	v
+name	/mnt/linux/project/pace/php/pace/run-tests.php	/^	foreach($ini_settings as $name => $value) {$/;"	v
+no_clean	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$no_clean = true;$/;"	v
+no_clean	/mnt/linux/project/pace/php/pace/run-tests.php	/^$no_clean = false;$/;"	v
+o	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$o = explode("\\n", $output);$/;"	v
+o	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$o = opendir($dir) or error("cannot open directory: $dir");$/;"	v
+old1	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$old1 = array();$/;"	v
+old2	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$old2 = array();$/;"	v
+old_php	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$old_php = $php;$/;"	v
+old_php	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$old_php = $php;$/;"	v
+old_zend_compile_file	/mnt/linux/project/pace/php/pace/pace.c	/^zend_op_array*(*old_zend_compile_file)(zend_file_handle * file_handle, int type TSRMLS_DC);$/;"	v
+old_zend_execute	/mnt/linux/project/pace/php/pace/pace.c	/^static void (*old_zend_execute)(zend_op_array * op_array TSRMLS_DC);$/;"	v	file:
+old_zend_execute_ex	/mnt/linux/project/pace/php/pace/pace.c	/^static void (*old_zend_execute_ex)(zend_execute_data * execute_data TSRMLS_DC);$/;"	v	file:
+op_array	/mnt/linux/project/pace/php/pace/php_pace.h	/^  zend_op_array * op_array;$/;"	m	struct:_zend_compile_retval
+op_array	/mnt/linux/project/pace/php/pace/php_pace.h	/^  zend_op_array * op_array;$/;"	m	struct:_zend_execute_args
+optionals	/mnt/linux/project/pace/php/pace/run-tests.php	/^$optionals = array('tests', 'ext', 'Zend', 'ZendEngine2', 'sapi\/cli', 'sapi\/cgi');$/;"	v
+org_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$org_file = $file;$/;"	v
+org_headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$org_headers = $headers;$/;"	v
+out	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$out = system_with_timeout($cmd, $env, isset($section_text['STDIN']) ? $section_text['STDIN'] : null);$/;"	v
+output	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$output = system_with_timeout("$extra $php $pass_options -q $ini_settings -d display_errors=0 \\"$test_skipif\\"", $env);$/;"	v
+output	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$output = $output_headers . "\\n--HEADERS--\\n" . $output;$/;"	v
+output	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$output = trim($match[2]);$/;"	v
+output	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$output = preg_replace("\/\\r\\n\/", "\\n", trim($out));$/;"	v
+output_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$output_file = $argv[++$i];$/;"	v
+output_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$output_file = 'compress.zlib:\/\/' . $output_file . '.gz';$/;"	v
+output_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^$output_file = $CUR_DIR . '\/php_test_results_' . date('Ymd_Hi') . '.txt';$/;"	v
+output_filename	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$output_filename   = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'out';$/;"	v
+output_headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$output_headers = array();$/;"	v
+output_headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$output_headers = join("\\n", $output_headers);$/;"	v
+output_type	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$output_type = $type . 'ED';$/;"	v
+output_type	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$output_type = $type[0] . 'ED';$/;"	v
+pace	/mnt/linux/project/pace/php/pace/pace.c	/^ZEND_DECLARE_MODULE_GLOBALS(pace);$/;"	v
+pace	/mnt/linux/project/pace/php/pace/php_pace.h	/^PHP_MINFO_FUNCTION(pace);$/;"	v
+pace	/mnt/linux/project/pace/php/pace/php_pace.h	/^PHP_MINIT_FUNCTION(pace);$/;"	v
+pace	/mnt/linux/project/pace/php/pace/php_pace.h	/^PHP_MSHUTDOWN_FUNCTION(pace);$/;"	v
+pace	/mnt/linux/project/pace/php/pace/php_pace.h	/^PHP_RINIT_FUNCTION(pace);$/;"	v
+pace	/mnt/linux/project/pace/php/pace/php_pace.h	/^PHP_RSHUTDOWN_FUNCTION(pace);$/;"	v
+pace_functions	/mnt/linux/project/pace/php/pace/pace.c	/^const zend_function_entry pace_functions[] = {$/;"	v
+pace_module_entry	/mnt/linux/project/pace/php/pace/pace.c	/^zend_module_entry pace_module_entry = {$/;"	v
+pace_zend_compile_file	/mnt/linux/project/pace/php/pace/pace.c	/^zend_op_array * pace_zend_compile_file(zend_file_handle * file_handle, int type TSRMLS_DC)$/;"	f
+pace_zend_shutdown	/mnt/linux/project/pace/php/pace/pace.c	/^ZEND_DLEXPORT void pace_zend_shutdown(zend_extension *extension)$/;"	f
+pace_zend_startup	/mnt/linux/project/pace/php/pace/pace.c	/^ZEND_DLEXPORT int pace_zend_startup(zend_extension *extension)$/;"	f
+pass_option_n	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$pass_option_n = true;$/;"	v
+pass_option_n	/mnt/linux/project/pace/php/pace/run-tests.php	/^$pass_option_n = false;$/;"	v
+pass_options	/mnt/linux/project/pace/php/pace/run-tests.php	/^$pass_options = '';$/;"	v
+passed	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$passed = true;$/;"	v
+passed	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$passed = false;$/;"	v
+passed	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$passed = false;$/;"	v
+path	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$path = $url_bits['host'].$url_bits['path'];$/;"	v
+path	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$path = $url_bits['path'];$/;"	v
+pattern_match	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$pattern_match = glob($argv[$i] . '.phpt');$/;"	v
+pattern_match	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$pattern_match = glob($argv[$i]);$/;"	v
+percent_results	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$percent_results = array();$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^						$php = PHP_BINARY;$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$php = $argv[++$i];$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$php = $old_php;$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$php = $old_php;$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$php = realpath(".\/sapi\/cgi\/php-cgi") . ' -C ';$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$php = realpath(dirname($php) . "\/..\/..\/sapi\/cgi\/php-cgi") . ' -C ';$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$php = realpath(dirname($php) . "\/php-cgi") . ' -C ';$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$php = $php_cgi . ' -C ';$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$php = realpath(dirname($php) . "\/php-cgi.exe") . ' -C ';$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$php = $cwd . '\/sapi\/cli\/php';$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$php = $old_php;$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$php = getenv('TEST_PHP_EXECUTABLE');$/;"	v
+php	/mnt/linux/project/pace/php/pace/run-tests.php	/^$php = null;$/;"	v
+php_cgi	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$php_cgi = null;$/;"	v
+php_cgi	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$php_cgi = $cwd . '\/sapi\/cgi\/php-cgi';$/;"	v
+php_cgi	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$php_cgi = $cwd . '\/sapi\/cgi\/php-cgi';$/;"	v
+php_cgi	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$php_cgi = $env['TEST_PHP_CGI_EXECUTABLE'];$/;"	v
+php_cgi	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$php_cgi = getenv('TEST_PHP_CGI_EXECUTABLE');$/;"	v
+php_cgi	/mnt/linux/project/pace/php/pace/run-tests.php	/^$php_cgi = null;$/;"	v
+php_cgi_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$php_cgi_info = "$php_info_sep\\nPHP         : $php_cgi $php_info_cgi$php_info_sep";$/;"	v
+php_cgi_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$php_cgi_info = '';$/;"	v
+php_execute_check	/mnt/linux/project/pace/php/pace/pace.c	/^int php_execute_check(zend_file_handle *file_handle, int type)$/;"	f
+php_execute_check_selinux	/mnt/linux/project/pace/php/pace/pace_selinux.c	/^int php_execute_check_selinux(zend_file_handle *file_handle, int type)$/;"	f
+php_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$php_info = '<?php echo "$/;"	v
+php_info	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$php_info = `$php $pass_options $info_params "$info_file"`;$/;"	v
+php_info_cgi	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$php_info_cgi = `$php_cgi $pass_options $info_params -q "$info_file"`;$/;"	v
+php_info_sep	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$php_info_sep = "\\n---------------------------------------------------------------------";$/;"	v
+php_pace_init_globals	/mnt/linux/project/pace/php/pace/pace.c	/^static void php_pace_init_globals(zend_pace_globals *pace_globals)$/;"	f	file:
+php_version	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$php_version = urlencode(TESTED_PHP_VERSION);$/;"	v
+phpext_pace_ptr	/mnt/linux/project/pace/php/pace/php_pace.h	34;"	d
+phpincludedir	/mnt/linux/project/pace/php/pace/Makefile	/^phpincludedir = \/usr\/include\/php$/;"	m
+phplibdir	/mnt/linux/project/pace/php/pace/Makefile	/^phplibdir = \/mnt\/linux\/project\/pace\/php\/pace\/modules$/;"	m
+port	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$port = $proxy['port'];$/;"	v
+port	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$port = empty($url_bits['port']) ? 80 : $port = $url_bits['port'];$/;"	v
+post	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$post = trim($section_text['POST']);$/;"	v
+post	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$post = trim($section_text['POST_RAW']);$/;"	v
+post	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$post = trim($section_text['PUT']);$/;"	v
+post	/mnt/linux/project/pace/php/pace/run-tests.php	/^        $post = gzcompress($post, 9);$/;"	v
+post	/mnt/linux/project/pace/php/pace/run-tests.php	/^        $post = gzencode($post, 9, FORCE_GZIP);$/;"	v
+post	/mnt/linux/project/pace/php/pace/run-tests.php	/^        $post = trim($section_text['DEFLATE_POST']);$/;"	v
+post	/mnt/linux/project/pace/php/pace/run-tests.php	/^        $post = trim($section_text['GZIP_POST']);$/;"	v
+prefix	/mnt/linux/project/pace/php/pace/Makefile	/^prefix = \/usr$/;"	m
+proc	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$proc = proc_open($commandline, array($/;"	v
+prototypes	/mnt/linux/project/pace/php/pace/configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+proxy	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$proxy = parse_url($proxy);$/;"	v
+query_string	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$query_string = '';$/;"	v
+query_string	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$query_string = trim($section_text['GET']);$/;"	v
+r	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$r = "%r";$/;"	v
+r	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$r = $pipes;$/;"	v
+r	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$r = is_null($wanted_re) ? $w : explode("\\n", $wanted_re);$/;"	v
+raw_lines	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$raw_lines = explode("\\n", $post);$/;"	v
+redir_tested	/mnt/linux/project/pace/php/pace/run-tests.php	/^function run_all_tests($test_files, $env, $redir_tested = null)$/;"	v
+redir_tests	/mnt/linux/project/pace/php/pace/run-tests.php	/^$redir_tests = array();$/;"	v
+redirenv	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$redirenv = array_merge($environment, $IN_REDIRECT['ENV']);$/;"	v
+repeat	/mnt/linux/project/pace/php/pace/run-tests.php	/^						$repeat = true;$/;"	v
+repeat	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$repeat = false;$/;"	v
+repeat	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$repeat = substr($argv[$i],0,1) == '-';$/;"	v
+replace_count	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$replace_count = 0;$/;"	v
+request	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$request = '';$/;"	v
+result	/mnt/linux/project/pace/php/pace/run-tests.php	/^			if ($failed_tests_file && ($result == 'XFAILED' || $result == 'FAILED' || $result == 'WARNED' || $result == 'LEAKED')) {$/;"	v
+result	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$result = run_test($php, $name, $env);$/;"	v
+result	/mnt/linux/project/pace/php/pace/run-tests.php	/^    $result = sprintf($/;"	v
+rh	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$rh = preg_split("\/[\\n\\r]+\/", $match[1]);$/;"	v
+run_all_tests	/mnt/linux/project/pace/php/pace/run-tests.php	/^function run_all_tests($test_files, $env, $redir_tested = null)$/;"	f
+run_test	/mnt/linux/project/pace/php/pace/run-tests.php	/^function run_test($php, $file, $env)$/;"	f
+save_or_mail_results	/mnt/linux/project/pace/php/pace/run-tests.php	/^function save_or_mail_results()$/;"	f
+save_text	/mnt/linux/project/pace/php/pace/run-tests.php	/^function save_text($filename, $text, $filename_copy = null)$/;"	f
+secdone	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$secdone = false;$/;"	v
+secdone	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$secdone = true;$/;"	v
+secdone	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$secdone = false;$/;"	v
+secfile	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$secfile = $section == 'FILE' || $section == 'FILEEOF' || $section == 'FILE_EXTERNAL';$/;"	v
+secfile	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$secfile = false;$/;"	v
+section	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$section = $r[1];$/;"	v
+section	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$section = strtoupper($file);$/;"	v
+section	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$section = 'TEST';$/;"	v
+section	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_file_block($file, $block, $section = null)$/;"	v
+section_text	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$section_text = array('TEST' => '');$/;"	v
+sep	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$sep = "\\n" . str_repeat('=', 80) . "\\n";$/;"	v
+setting	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$setting = explode("=", $setting, 2);$/;"	v
+settings	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$settings = '';$/;"	v
+settings2array	/mnt/linux/project/pace/php/pace/run-tests.php	/^function settings2array($settings, &$ini_settings)$/;"	f
+settings2params	/mnt/linux/project/pace/php/pace/run-tests.php	/^function settings2params(&$ini_settings)$/;"	f
+sh_filename	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$sh_filename       = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'sh';$/;"	v
+shared_objects_pace	/mnt/linux/project/pace/php/pace/Makefile	/^shared_objects_pace = pace.lo pace_selinux.lo$/;"	m
+shortname	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$shortname = str_replace($cwd . '\/', '', $file);$/;"	v
+show_end	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_end($end_time)$/;"	f
+show_file_block	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_file_block($file, $block, $section = null)$/;"	f
+show_redirect_ends	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_redirect_ends($tests, $tested, $tested_file)$/;"	f
+show_redirect_start	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_redirect_start($tests, $tested, $tested_file)$/;"	f
+show_result	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_result($result, $tested, $tested_file, $extra = '', $temp_filenames = null)$/;"	f
+show_start	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_start($start_time)$/;"	f
+show_summary	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_summary()$/;"	f
+show_test	/mnt/linux/project/pace/php/pace/run-tests.php	/^function show_test($test_idx, $shortname)$/;"	f
+shtool_exit	/mnt/linux/project/pace/php/pace/build/shtool	/^shtool_exit () {$/;"	f
+sigmask	/mnt/linux/project/pace/php/pace/php_pace.h	/^  sigset_t * sigmask;$/;"	m	struct:_zend_execute_args
+skip_ext	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$skip_ext = ($is_ext_dir && !in_array(strtolower($name), $exts_to_test));$/;"	v
+srcdir	/mnt/linux/project/pace/php/pace/Makefile	/^srcdir = \/mnt\/linux\/project\/pace\/php\/pace$/;"	m
+st	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$st = $steps \/ 2;$/;"	v
+st	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$st = $steps;$/;"	v
+start	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$start = $end = $length;$/;"	v
+start	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$start = strpos($wanted_re, $r, $startOffset);$/;"	v
+start	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$start = $JUNIT['files'][$file_name]['start'];$/;"	v
+startOffset	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$startOffset = $end + 2;$/;"	v
+startOffset	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$startOffset = 0;$/;"	v
+start_time	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$start_time = time();$/;"	v
+start_time	/mnt/linux/project/pace/php/pace/run-tests.php	/^$start_time = time();$/;"	v
+started	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$started = true;$/;"	v
+started	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$started = false;$/;"	v
+stat	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$stat = proc_get_status($proc);$/;"	v
+status	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$status = "failed";$/;"	v
+status	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$status = "success";$/;"	v
+status	/mnt/linux/project/pace/php/pace/run-tests.php	/^function mail_qa_team($data, $compression, $status = false)$/;"	v
+str	/mnt/linux/project/pace/php/pace/pace.php	/^	$str = "Module $module is not compiled into PHP";$/;"	v
+str	/mnt/linux/project/pace/php/pace/pace.php	/^	$str = $function($module);$/;"	v
+str	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$str = "TEST $test_idx\/$test_cnt [$shortname]\\r";$/;"	v
+suite	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$suite = junit_get_suitename_for($file_name);$/;"	v
+suite	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$suite = $suite_name ? $JUNIT['suites'][$suite_name] : $JUNIT;$/;"	v
+suite	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$suite = junit_get_suitename_for($file_name);$/;"	v
+sum_results	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$sum_results = array($/;"	v
+summary	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$summary = '';$/;"	v
+switch	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$switch = $argv[$i];$/;"	v
+switch	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$switch = substr($argv[$i],1,1);$/;"	v
+switch	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$switch = substr($argv[$i],1,1);$/;"	v
+sys_libtool	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$sys_libtool = shell_exec(str_replace("\\n", "", $sys_libtool_path) . ' --version');$/;"	v
+sys_libtool_path	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$sys_libtool_path = shell_exec(__DIR__ . '\/build\/shtool path glibtool libtool');$/;"	v
+system_with_timeout	/mnt/linux/project/pace/php/pace/run-tests.php	/^function system_with_timeout($commandline, $env = null, $stdin = null)$/;"	f
+ta	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$ta = strpos($a, "{$cwd}\/tests") === 0 ? 1 + (strpos($a, "{$cwd}\/tests\/run-test") === 0 ? 1 : 0) : 0;$/;"	v
+tb	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$tb = strpos($b, "{$cwd}\/tests") === 0 ? 1 + (strpos($b, "{$cwd}\/tests\/run-test") === 0 ? 1 : 0) : 0;$/;"	v
+temp	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$temp = $temp . '(' . substr($wanted_re, $start+2, ($end - $start-2)). ')';$/;"	v
+temp	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$temp = $temp . preg_quote(substr($wanted_re, $startOffset, ($start - $startOffset)),  '\/');$/;"	v
+temp	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$temp = "";$/;"	v
+temp	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$temp = array_intersect(array('XFAIL', 'FAIL'), $type);$/;"	v
+temp_clean	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$temp_clean        = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'clean.php';$/;"	v
+temp_dir	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$temp_dir = $test_dir = $IN_REDIRECT['dir'];$/;"	v
+temp_dir	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$temp_dir = $test_dir = realpath(dirname($file));$/;"	v
+temp_dir	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$temp_dir = str_replace($temp_source, $temp_target, $temp_dir);$/;"	v
+temp_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$temp_file         = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'php';$/;"	v
+temp_filenames	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$temp_filenames = array($/;"	v
+temp_filenames	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$temp_filenames = null;$/;"	v
+temp_skipif	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$temp_skipif       = $temp_dir . DIRECTORY_SEPARATOR . $main_file_name . 'skip.php';$/;"	v
+temp_source	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$temp_source = $argv[++$i];$/;"	v
+temp_source	/mnt/linux/project/pace/php/pace/run-tests.php	/^$temp_source = null;$/;"	v
+temp_target	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$temp_target = $argv[++$i];$/;"	v
+temp_target	/mnt/linux/project/pace/php/pace/run-tests.php	/^$temp_target = null;$/;"	v
+temp_urlbase	/mnt/linux/project/pace/php/pace/run-tests.php	/^						$temp_urlbase = $temp_target;$/;"	v
+temp_urlbase	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$temp_urlbase = $argv[++$i];$/;"	v
+temp_urlbase	/mnt/linux/project/pace/php/pace/run-tests.php	/^$temp_urlbase = null;$/;"	v
+test_clean	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$test_clean        = $test_dir . DIRECTORY_SEPARATOR . $main_file_name . 'clean.php';$/;"	v
+test_cnt	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$test_cnt = count($test_files);$/;"	v
+test_cnt	/mnt/linux/project/pace/php/pace/run-tests.php	/^$test_cnt = count($test_files);$/;"	v
+test_dirs	/mnt/linux/project/pace/php/pace/run-tests.php	/^$test_dirs = array();$/;"	v
+test_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$test_file         = $test_dir . DIRECTORY_SEPARATOR . $main_file_name . 'php';$/;"	v
+test_files	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$test_files = array_merge($test_files, $pattern_match);$/;"	v
+test_files	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$test_files = array();$/;"	v
+test_files	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$test_files = array_merge($test_files, $redir_tests);$/;"	v
+test_files	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$test_files = array_unique($test_files);$/;"	v
+test_files	/mnt/linux/project/pace/php/pace/run-tests.php	/^$test_files = array();$/;"	v
+test_files	/mnt/linux/project/pace/php/pace/run-tests.php	/^$test_files = array_unique($test_files);$/;"	v
+test_idx	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$test_idx = 0;$/;"	v
+test_idx	/mnt/linux/project/pace/php/pace/run-tests.php	/^$test_idx = 0;$/;"	v
+test_list	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$test_list = file($argv[++$i]);$/;"	v
+test_name	/mnt/linux/project/pace/php/pace/run-tests.php	/^function test_name($name)$/;"	f
+test_results	/mnt/linux/project/pace/php/pace/run-tests.php	/^$test_results = array();$/;"	v
+test_skipif	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$test_skipif       = $test_dir . DIRECTORY_SEPARATOR . $main_file_name . 'skip.php';$/;"	v
+test_sort	/mnt/linux/project/pace/php/pace/run-tests.php	/^function test_sort($a, $b)$/;"	f
+tested	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$tested = "<a href='$url'>$tested<\/a>";$/;"	v
+tested	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$tested = $IN_REDIRECT['prefix'] . ' ' . trim($section_text['TEST']);$/;"	v
+tested	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$tested = trim($section_text['TEST']);$/;"	v
+tested_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$tested_file = $tmp_relative_file;$/;"	v
+tested_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$tested_file = $shortname;$/;"	v
+testfile	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$testfile = realpath("{$dir}\/{$name}");$/;"	v
+testfile	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$testfile = realpath($argv[$i]);$/;"	v
+testname	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$testname = realpath($testname);$/;"	v
+time	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$time = null !== $time ? $time : junit_get_timer($file_name);$/;"	v
+time	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_mark_test_as($type, $file_name, $test_name, $time = null, $message = '', $details = '') {$/;"	v
+timeout	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$timeout = $leak_check ? 300 : (isset($env['TEST_TIMEOUT']) ? $env['TEST_TIMEOUT'] : 60);$/;"	v
+tmp_post	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$tmp_post          = $temp_dir . DIRECTORY_SEPARATOR . uniqid('\/phpt.');$/;"	v
+tmp_relative_file	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$tmp_relative_file = str_replace(__DIR__ . DIRECTORY_SEPARATOR, '', $test_file) . 't';$/;"	v
+top_builddir	/mnt/linux/project/pace/php/pace/Makefile	/^top_builddir = \/mnt\/linux\/project\/pace\/php\/pace$/;"	m
+top_srcdir	/mnt/linux/project/pace/php/pace/Makefile	/^top_srcdir = \/mnt\/linux\/project\/pace\/php\/pace$/;"	m
+type	/mnt/linux/project/pace/php/pace/php_pace.h	/^  int type;$/;"	m	struct:_zend_compile_args
+type	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$type = reset($temp);$/;"	v
+url	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$url = str_replace($temp_target, $temp_urlbase, $temp_filenames['diff']);$/;"	v
+url	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$url = str_replace($temp_target, $temp_urlbase, $temp_filenames['file']);$/;"	v
+url	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$url = str_replace($temp_target, $temp_urlbase, $temp_filenames['mem']);$/;"	v
+url	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$url = str_replace($temp_target, $temp_urlbase, $temp_filenames['skip']);$/;"	v
+url_bits	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$url_bits = parse_url(QA_SUBMISSION_PAGE);$/;"	v
+user_email	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$user_email = 'travis at php dot net';$/;"	v
+user_email	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$user_email = str_replace("@", " at ", str_replace(".", " dot ", $user_email));$/;"	v
+user_email	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$user_email = trim(fgets($fp, 1024));$/;"	v
+user_input	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$user_input = 's';$/;"	v
+user_input	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$user_input = fgets($fp, 10);$/;"	v
+user_tests	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$user_tests = array();$/;"	v
+user_tests	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$user_tests = explode (',', getenv('TEST_PHP_USER'));$/;"	v
+util_lower	/mnt/linux/project/pace/php/pace/build/shtool	/^util_lower () {$/;"	f
+util_upper	/mnt/linux/project/pace/php/pace/build/shtool	/^util_upper () {$/;"	f
+val	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$val = addslashes($val);$/;"	v
+valgrind_cmd	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$valgrind_cmd = "valgrind --version";$/;"	v
+valgrind_header	/mnt/linux/project/pace/php/pace/run-tests.php	/^						$valgrind_header = trim($valgrind_header);$/;"	v
+valgrind_header	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$valgrind_header = system_with_timeout($valgrind_cmd, $environment);$/;"	v
+valgrind_header	/mnt/linux/project/pace/php/pace/run-tests.php	/^$valgrind_header = '';$/;"	v
+valgrind_version	/mnt/linux/project/pace/php/pace/run-tests.php	/^						$valgrind_version = preg_replace("\/valgrind-([0-9])\\.([0-9])\\.([0-9]+)([.-\\w]+)?(\\s+)\/", '$1$2$3', $valgrind_header, 1, $replace_count);$/;"	v
+valgrind_version	/mnt/linux/project/pace/php/pace/run-tests.php	/^$valgrind_version = 0;$/;"	v
+value	/mnt/linux/project/pace/php/pace/run-tests.php	/^				$value = addslashes($value);$/;"	v
+value	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$value = trim($setting[1]);$/;"	v
+value	/mnt/linux/project/pace/php/pace/run-tests.php	/^function junit_suite_record($suite, $param, $value = 1) {$/;"	v
+verify_config	/mnt/linux/project/pace/php/pace/run-tests.php	/^function verify_config()$/;"	f
+w	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$w = null;$/;"	v
+w	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$w = explode("\\n", $wanted);$/;"	v
+want	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$want = array();$/;"	v
+wanted	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted = trim($section_text['EXPECTF']);$/;"	v
+wanted	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted = trim($section_text['EXPECTREGEX']);$/;"	v
+wanted	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$wanted = $wanted_headers . "\\n--HEADERS--\\n" . $wanted;$/;"	v
+wanted	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$wanted = preg_replace('\/\\r\\n\/',"\\n", $wanted);$/;"	v
+wanted	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$wanted = trim($section_text['EXPECT']);$/;"	v
+wanted_headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$wanted_headers = array();$/;"	v
+wanted_headers	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$wanted_headers = join("\\n", $wanted_headers);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = $temp;$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = preg_quote($wanted_headers . "\\n--HEADERS--\\n", '\/') . $wanted_re;$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace($/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%A', '.*', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%S', '[^\\r\\n]*', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%a', '.+', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%c', '.', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%d', '\\d+', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%e', '\\\\' . DIRECTORY_SEPARATOR, $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%f', '[+-]?\\.?\\d+\\.?\\d*(?:[Ee][+-]?\\d+)?', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%i', '[+-]?\\d+', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%s', '[^\\r\\n]+', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%w', '\\s*', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^			$wanted_re = str_replace('%x', '[0-9a-fA-F]+', $wanted_re);$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$wanted_re = null;$/;"	v
+wanted_re	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$wanted_re = preg_replace('\/\\r\\n\/', "\\n", $wanted);$/;"	v
+warn	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$warn = true; \/* only if there is a reason *\/$/;"	v
+warn	/mnt/linux/project/pace/php/pace/run-tests.php	/^					$warn = true;$/;"	v
+warn	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$warn = false;$/;"	v
+write_information	/mnt/linux/project/pace/php/pace/run-tests.php	/^function write_information($show_html)$/;"	f
+x_failed	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$x_failed = (100.0 * $sum_results['FAILED']) \/ $x_total;$/;"	v
+x_leaked	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$x_leaked = (100.0 * $sum_results['LEAKED']) \/ $x_total;$/;"	v
+x_passed	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$x_passed = (100.0 * $sum_results['PASSED']) \/ $x_total;$/;"	v
+x_total	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$x_total = $n_total - $sum_results['SKIPPED'] - $sum_results['BORKED'];$/;"	v
+x_warned	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$x_warned = $x_failed = $x_passed = $x_leaked = $x_xfailed = 0;$/;"	v
+x_warned	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$x_warned = (100.0 * $sum_results['WARNED']) \/ $x_total;$/;"	v
+x_xfailed	/mnt/linux/project/pace/php/pace/run-tests.php	/^		$x_xfailed = (100.0 * $sum_results['XFAILED']) \/ $x_total;$/;"	v
+xml	/mnt/linux/project/pace/php/pace/run-tests.php	/^	$xml = '<?xml version="1.0" encoding="UTF-8"?>'. PHP_EOL .$/;"	v
+zend_compile_args	/mnt/linux/project/pace/php/pace/php_pace.h	/^} zend_compile_args;$/;"	t	typeref:struct:_zend_compile_args
+zend_compile_retval	/mnt/linux/project/pace/php/pace/php_pace.h	/^} zend_compile_retval;$/;"	t	typeref:struct:_zend_compile_retval
+zend_execute_args	/mnt/linux/project/pace/php/pace/php_pace.h	/^} zend_execute_args;$/;"	t	typeref:struct:_zend_execute_args
+zend_execute_retval	/mnt/linux/project/pace/php/pace/php_pace.h	/^} zend_execute_retval;$/;"	t	typeref:struct:_zend_execute_retval
+zend_extension_entry	/mnt/linux/project/pace/php/pace/pace.c	/^ZEND_DLEXPORT zend_extension zend_extension_entry = {$/;"	v
+zend_pace_initialised	/mnt/linux/project/pace/php/pace/pace.c	/^int zend_pace_initialised = 0;$/;"	v

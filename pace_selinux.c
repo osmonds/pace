@@ -19,7 +19,7 @@ log_callback (int type, const char *fmt, ...)
     va_list ap;
     va_start(ap, fmt);
     audit_fd = audit_open();
-    zend_error(E_WARNING, "!!!!!!!!!!!!!!!!!!!,audit_fd:%d",audit_fd);
+    //zend_error(E_WARNING, "!!!!!!!!!!!!!!!!!!!,audit_fd:%d",audit_fd);
 
     if(audit_fd >= 0){
         char * buf;
@@ -90,7 +90,7 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 				tclass,
 				av_perm,
 				&avd);
-    zend_error(E_WARNING, "ret:[%d],errno:[%d][%x][%x][%x][%x][%s]",ret, errno, av_perm & avd.allowed, avd.allowed, av_perm, tclass, file_handle->filename);
+//    zend_error(E_WARNING, "ret:[%d],errno:[%d]and:[%x]allowed[%x]av_perm[%x]tclass[%x]tcontext:%s]filename[%s]",ret, errno, av_perm & avd.allowed, avd.allowed, av_perm, tclass, file_context, file_handle->filename);
 	if((ret == 0) && ((av_perm & avd.allowed) == av_perm )){
 		ret = 0;
 	}else{
@@ -102,7 +102,7 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 	
 //	selinux_set_callback(SELINUX_CB_LOG, old_callback);
 	if(ret == -1){
-		zend_error(E_WARNING, "permission denied:%s, to %s[%s].", current_context, file_context, file_handle->filename);
+		zend_error(E_WARNING, "permission denied:current:[%s], to file_context[%s][%s].", current_context, file_context, file_handle->filename);
 		return -1;
 	}
 skip_check:
