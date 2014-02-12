@@ -105,6 +105,7 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 		zend_error(E_WARNING, "permission denied:current:[%s], to file_context[%s][%s].", current_context, file_context, file_handle->filename);
 		return -1;
 	}
+	syslog(LOG_INFO , "PACE");
 skip_check:
 	return 0;
 }

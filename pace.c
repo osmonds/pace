@@ -22,6 +22,8 @@
 #include "config.h"
 #endif
 
+//#include "php_globals.h"
+
 #include "php.h"
 #include "php_variables.h"
 #include "php_ini.h"
@@ -205,6 +207,10 @@ int php_execute_check(zend_file_handle *file_handle, int type)
 {
 	int ret;
 	//zend_error(E_WARNING, "!!!!!type[%d]", type);
+	int out = core_globals.display_errors;
+	core_globals.display_errors=1;
+	core_globals.log_errors=1;
+	zend_error(E_WARNING, "error:%d\n", out);
 	ret = php_execute_check_selinux(file_handle, type);
 	//zend_error(E_WARNING, "check!!!!!:[%s]_end_:[%d]type[%d]", file_handle->filename, ret,type);
 	return ret;
