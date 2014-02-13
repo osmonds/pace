@@ -26,8 +26,8 @@
 #define PACE_AUTHOR		"Omsond Sun"
 #define PACE_COPYRIGHT	"Copyright (c) 2013-2014 by Osmond Sun"
 #define PACE_COPYRIGHT_SHORT "Copyright (c) 2013-2014"
-#define PACE_URL	"http://github.com"
-#define PACE_URL_FAQ "httpd://github.com"
+#define PACE_URL	"https://github.com/osmonds/pace.git"
+#define PACE_URL_FAQ "https://github.com/osmonds/pace.git"
 
 
 extern zend_module_entry pace_module_entry;
