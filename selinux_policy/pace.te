@@ -1,0 +1,37 @@
+
+module pace 1.0;
+
+require {
+	type security_t;
+	type admin_home_t;
+	type httpd_t;
+	type xdm_t;
+	class security compute_av;
+	type httpd_sys_content_t;
+	type httpd_tmp_t;
+	class file { rename write setattr read create open  execute getattr};
+	class dir { read remove_name add_name getattr};
+	class netlink_audit_socket { create nlmsg_relay};
+	class netlink_selinux_socket read;
+}
+
+#============= httpd_t ==============
+allow httpd_t security_t:security compute_av;
+allow httpd_t security_t:file { read write open};
+allow httpd_t security_t:dir read;
+allow httpd_t security_t:file getattr;
+
+
+#!!!! This avc can be allowed using the boolean 'allow_httpd_mod_auth_pam'
+allow httpd_t self:netlink_audit_socket create;
+
+allow httpd_t self:netlink_audit_socket nlmsg_relay;
+allow httpd_t self:netlink_selinux_socket read;
+
+
+gen_tunable(allow_httpd_content_execute, false)
+
+tunable_policy(`allow_httpd_content_execute',`
+allow httpd_t httpd_sys_content_t:file execute;
+allow httpd_t httpd_tmp_t:file execute;
+')

@@ -3,6 +3,10 @@
 ctags
 tags
 
+selinux_policy/*.pp
+selinux_policy/tmp/
+selinux_policy/tmp/*
+
 .deps
 .libs/
 Makefile*
