@@ -1,6 +1,7 @@
 *.bak
 *.swp
 ctags
+tags
 
 .deps
 .libs/
