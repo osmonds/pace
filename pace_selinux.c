@@ -43,19 +43,49 @@ log_callback (int type, const char *fmt, ...)
     return 0;
 }
 
+/*
+ * This callback (SELINUX_CB_AUDIT) is invoked whenever avc_has_perm calls
+ * avc_audit with the auditdata parameter. It becomes the 'msg=' entry in the
+ * audit log. This callback is optional - use only if additional AVC info needs
+ * to be logged.
+ */
+static int
+audit_callback(void *auditdata,
+                    security_class_t class,
+                    char *msgbuf,
+                    size_t msgbufsize)
+{
+	/******************* Do your processing here *****************/
+    /*
+	* The auditdata buffer was updated just before calling avc_has_perm()
+    * The snprintf function will return a negative value.
+    */
+    return snprintf(msgbuf, msgbufsize, "%s", (char *)auditdata);
+}
+
+#define CLASS "file"
+#define PERM_LIST "execute"
+#define  AUDIT_MSG_HEAD "PACE:permissin denied for interpretive execute:"
+
 int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 {
 	security_context_t current_context;
 	security_context_t file_context;
-	union selinux_callback old_callback;
-	old_callback = selinux_get_callback(SELINUX_CB_LOG);
+	int audit_msg_len;
+	char * audit_msg;
+	int ret = 0;
+	union selinux_callback old_log_callback, old_audit_callback;
+
+	old_log_callback = selinux_get_callback(SELINUX_CB_LOG);
+	old_audit_callback = selinux_get_callback(SELINUX_CB_AUDIT);
 	selinux_set_callback(SELINUX_CB_LOG, (union selinux_callback) &log_callback);
+    selinux_set_callback(SELINUX_CB_AUDIT, (union selinux_callback)&audit_callback);
 	
 	if(getcon(&current_context)){
 		zend_error(E_ERROR, "getcon() failed");
 	}
 
-	int ret = getfilecon(file_handle->filename, &file_context);
+	ret = getfilecon(file_handle->filename, &file_context);
 	/*
  	 * Security check should ignore the ENOENT(No such file or directory) error.
  	 * The basic zend engine will handle this error according to the application's code.
@@ -66,33 +96,18 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 		}
 		zend_error(E_ERROR, "getfilecon() failed:%s,%s,%d", file_handle->filename, strerror(errno), errno);
 	}
-	char * class = "file";
-	char * perm_list = "execute";
-	
-	char * audit_msg;
-#if 0
-	unsigned int access = FILE__EXECUTE;
-	struct av_decision avd;
-	security_class_t tclass;
-	tclass = string_to_security_class("file");
-	access_vector_t av_perm;
-	av_perm = string_to_av_perm(tclass, "execute");
-	ret = security_compute_av(current_context, file_context,
-				tclass,
-				av_perm,
-				&avd);
-//    zend_error(E_WARNING, "ret:[%d],errno:[%d]and:[%x]allowed[%x]av_perm[%x]tclass[%x]tcontext:%s]filename[%s]",ret, errno, av_perm & avd.allowed, avd.allowed, av_perm, tclass, file_context, file_handle->filename);
-	if((ret == 0) && ((av_perm & avd.allowed) == av_perm )){
-		ret = 0;
-	}else{
-		ret = -1;
-	}	
-#endif
+
+	audit_msg_len = strlen(AUDIT_MSG_HEAD) + strlen(file_handle->filename) + 1;	
+	audit_msg = (char*)malloc(audit_msg_len);
+	snprintf(audit_msg, audit_msg_len, "%s%s", AUDIT_MSG_HEAD, file_handle->filename);
+	audit_msg[audit_msg_len-1] = '\0';	
+
 	ret = selinux_check_access(current_context, file_context,
-							class, perm_list,
-							NULL);
+							CLASS, PERM_LIST,
+							audit_msg);
 	if( ret ){
 		if(errno == EACCES){
+			zend_error(E_WARNING, "permission denied:current:[%s], to file :%s with file_context [%s].", current_context, file_handle->filename, file_context);
 			ret = -1;
 		}else{
 			ret = 0;
@@ -101,15 +116,13 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 	}else{
 		ret = 0;
 	}
+	freecon(current_context);
 	freecon(file_context);
-				
-	selinux_set_callback(SELINUX_CB_LOG, old_callback);
-	if(ret == -1){
-		zend_error(E_WARNING, "permission denied:current:[%s], to file :%s with file_context [%s].", current_context, file_handle->filename, file_context);
-		return -1;
-	}
+	free(audit_msg);
+	selinux_set_callback(SELINUX_CB_LOG, old_log_callback);
+	selinux_set_callback(SELINUX_CB_AUDIT, old_audit_callback);
 skip_check:
-	return 0;
+	return ret;
 }
 
 /*

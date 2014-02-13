@@ -109,8 +109,8 @@ ZEND_GET_MODULE(pace)
 /* Remove comments and fill if you need to have entries in php.ini
  */
 PHP_INI_BEGIN()
-    STD_PHP_INI_ENTRY("pace.global_value",      "42", PHP_INI_SYSTEM, OnUpdateString, global_value, zend_pace_globals, pace_globals)
-    STD_PHP_INI_ENTRY("pace.global_string", "foobar", PHP_INI_SYSTEM, OnUpdateString, global_string, zend_pace_globals, pace_globals)
+//    STD_PHP_INI_ENTRY("pace.version",      "0.1", PHP_INI_SYSTEM, OnUpdateString, global_value, zend_pace_globals, pace_globals)
+//   STD_PHP_INI_ENTRY("pace.global_string", "foobar", PHP_INI_SYSTEM, OnUpdateString, global_string, zend_pace_globals, pace_globals)
 PHP_INI_END()
 /* }}} */
 
@@ -118,8 +118,8 @@ PHP_INI_END()
  */
 static void php_pace_init_globals(zend_pace_globals *pace_globals)
 {
-	pace_globals->global_value = NULL;
-	pace_globals->global_string = NULL;
+//	pace_globals->version = NULL;
+//	pace_globals->global_string = NULL;
 }
 /* }}} */
 
