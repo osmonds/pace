@@ -19,7 +19,13 @@ log_callback (int type, const char *fmt, ...)
     va_list ap;
     va_start(ap, fmt);
     audit_fd = audit_open();
-    //zend_error(E_WARNING, "!!!!!!!!!!!!!!!!!!!,audit_fd:%d",audit_fd);
+	
+	if (audit_fd < 0 && !(errno == EINVAL || errno == EPROTONOSUPPORT ||
+                           errno == EAFNOSUPPORT)) {
+         /* The above error codes are only given when the kernel doesn't
+          * have audit compiled in. */
+         zend_error(E_WARNING, "Error - unable to connect to audit system\n");
+    }
 
     if(audit_fd >= 0){
         char * buf;
@@ -42,16 +48,6 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 	security_context_t current_context;
 	security_context_t file_context;
 	union selinux_callback old_callback;
-#if 0 
-	int audit_fd = audit_open();
-	if (audit_fd < 0 && !(errno == EINVAL || errno == EPROTONOSUPPORT ||
-                           errno == EAFNOSUPPORT)) {
-         /* The above error codes are only given when the kernel doesn't
-          * have audit compiled in. */
-         zend_error(E_WARNING, "Error - unable to connect to audit system\n");
-    }
-	zend_error(E_WARNING, "!!!!!!!!!!!!!audit_fd:%d", audit_fd);
-#endif
 	old_callback = selinux_get_callback(SELINUX_CB_LOG);
 	selinux_set_callback(SELINUX_CB_LOG, (union selinux_callback) &log_callback);
 	
@@ -74,12 +70,7 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 	char * perm_list = "execute";
 	
 	char * audit_msg;
-#if 0	
-	//int ret;
-	ret = selinux_check_access(current_context, file_context,
-							class, perm_list,
-							NULL);
-#endif
+#if 0
 	unsigned int access = FILE__EXECUTE;
 	struct av_decision avd;
 	security_class_t tclass;
@@ -96,16 +87,27 @@ int php_execute_check_selinux(zend_file_handle *file_handle, int type)
 	}else{
 		ret = -1;
 	}	
+#endif
+	ret = selinux_check_access(current_context, file_context,
+							class, perm_list,
+							NULL);
+	if( ret ){
+		if(errno == EACCES){
+			ret = -1;
+		}else{
+			ret = 0;
+			zend_error(E_WARNING, "selinux_check_access ERROR:%s",  strerror(errno));
+		}	
+	}else{
+		ret = 0;
+	}
 	freecon(file_context);
 				
-//	zend_error(E_WARNING, "current:%s, file:%s", current_context, file_context);
-	
-//	selinux_set_callback(SELINUX_CB_LOG, old_callback);
+	selinux_set_callback(SELINUX_CB_LOG, old_callback);
 	if(ret == -1){
-		zend_error(E_WARNING, "permission denied:current:[%s], to file_context[%s][%s].", current_context, file_context, file_handle->filename);
+		zend_error(E_WARNING, "permission denied:current:[%s], to file :%s with file_context [%s].", current_context, file_handle->filename, file_context);
 		return -1;
 	}
-	syslog(LOG_INFO , "PACE");
 skip_check:
 	return 0;
 }

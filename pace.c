@@ -206,13 +206,7 @@ PHP_MINFO_FUNCTION(pace)
 int php_execute_check(zend_file_handle *file_handle, int type)
 {
 	int ret;
-	//zend_error(E_WARNING, "!!!!!type[%d]", type);
-	int out = core_globals.display_errors;
-	core_globals.display_errors=1;
-	core_globals.log_errors=1;
-	zend_error(E_WARNING, "error:%d\n", out);
 	ret = php_execute_check_selinux(file_handle, type);
-	//zend_error(E_WARNING, "check!!!!!:[%s]_end_:[%d]type[%d]", file_handle->filename, ret,type);
 	return ret;
 }
 
@@ -222,12 +216,11 @@ int php_execute_check(zend_file_handle *file_handle, int type)
 zend_op_array * pace_zend_compile_file(zend_file_handle * file_handle, int type TSRMLS_DC)
 {
 	zend_op_array * compiled_op_array;
-    //zend_error(E_WARNING, "%s,[%s]",__func__, file_handle->filename);
 #if 1
 	int ret;
 	ret = php_execute_check(file_handle, type);
 	if(ret){
-		zend_error(E_ERROR,"permission denied");
+		zend_error(E_ERROR,"Permission denied");
 	}
 #endif
     compiled_op_array = old_zend_compile_file(file_handle, type TSRMLS_CC);
@@ -264,7 +257,6 @@ PHP_FUNCTION(confirm_pace_compiled)
 ZEND_DLEXPORT int pace_zend_startup(zend_extension *extension)
 {
         zend_pace_initialised = 1;
-     //   zend_error(E_WARNING, "OSMOND,startup");
         return zend_startup_module(&pace_module_entry);
 }
 
@@ -274,7 +266,6 @@ ZEND_DLEXPORT void pace_zend_shutdown(zend_extension *extension)
 }
 
 
-#if 1
 
 /* This is a Zend  extension */
 #ifndef ZEND_EXT_API
@@ -300,7 +291,6 @@ ZEND_DLEXPORT zend_extension zend_extension_entry = {
         NULL,                                   // op_array_dtor_func_t
         STANDARD_ZEND_EXTENSION_PROPERTIES
 };
-#endif
 /*
  * Local variables:
  * tab-width: 4
